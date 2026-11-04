@@ -71,6 +71,8 @@ def construire():
 
     for a in arts:
         url = f"{BASE}/{a['slug']}/"
+        autres = sorted([b for b in arts if b["slug"] != a["slug"]], key=lambda b: b["category"] != a["category"])[:3]
+        aussi = ('<aside class="aussi"><h2>À lire aussi</h2><ul>' + "".join(f'<li><a href="{BASE}/{b["slug"]}/">{html.escape(b["title"])}</a></li>' for b in autres) + '</ul></aside>') if autres else ""
         maj = f'<p class="maj">Mis à jour le {date_fr(a["updated"])}</p>' if a.get("updated") else ""
         contenu = f"""<main class="article">
 <span class="cat">{html.escape(a['category'])}</span>
@@ -78,6 +80,7 @@ def construire():
 <p class="meta">Publié le {date_fr(a['date'])}</p>
 <div class="corps">{a['corps']}</div>
 {maj}
+{aussi}
 <p style="margin-top:40px"><a href="{BASE}/">← Tous les articles</a></p>
 </main>"""
         schema = {"@context": "https://schema.org", "@type": "Article", "headline": a["title"],

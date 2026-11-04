@@ -74,3 +74,9 @@ footer .w{padding-block:26px;display:flex;justify-content:space-between;gap:16px
   .art{grid-template-columns:1fr;gap:4px}
   .corps table{font-size:14px}
 }
+
+.aussi{margin-top:44px;padding:22px 24px;background:#fff;border:1px solid var(--ligne);border-left:6px solid var(--surligneur)}
+.aussi h2{font-family:var(--titre);font-size:20px;margin-bottom:8px}
+.aussi ul{padding-left:20px}
+.aussi li{margin:6px 0;font-family:var(--titre);font-size:17px}
+.corps h2+p strong,.corps p>strong:first-child{white-space:normal}

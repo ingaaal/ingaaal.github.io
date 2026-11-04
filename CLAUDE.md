@@ -18,7 +18,14 @@ Public : étudiants de 17 à 25 ans. On tutoie le lecteur.
    category: Aides | Logement | Bons plans | Banque | Jobs | Démarches
    ---
    ```
-5. Style : la réponse à la question dès le premier paragraphe, avec le chiffre clé en **gras**. Puis des sections `##` courtes, des listes, un tableau quand il y a des montants. 600 à 1 200 mots. Phrases simples, pas de remplissage, pas de formules creuses (« dans cet article », « il est important de noter »). Ne jamais copier de phrases des sources : tout réécrire.
+5. Style et structure (obligatoires) — 700 à 1 200 mots :
+   - **Accroche** : la réponse dès le premier paragraphe avec le chiffre clé en **gras**, puis une phrase qui donne envie de lire la suite (un enjeu concret, un piège à éviter, ce que ça représente sur l'année).
+   - Sections `##` courtes, listes, un tableau dès qu'il y a des montants.
+   - **Un exemple concret chiffré** (« Tu es à l'échelon 2 et… », « Tu loues un studio à 450 €… ») construit uniquement avec des chiffres vérifiés ; si un montant est hypothétique, le présenter clairement comme un exemple.
+   - **Une section « Les erreurs qui coûtent cher »** (ou équivalent) avec 3 à 4 erreurs fréquentes.
+   - **Une section « Questions fréquentes »** à la fin : 3 à 4 questions telles que les gens les tapent sur Google (en **gras**), réponse courte en dessous.
+   - **2 liens internes minimum** vers d'autres articles du site quand c'est pertinent, au format `[texte](/site-auto/<slug>/)`. Si un nouvel article est lié à un ancien, ajouter aussi un lien depuis l'ancien vers le nouveau.
+   - Phrases simples, tutoiement, pas de remplissage, pas de formules creuses (« dans cet article », « il est important de noter »). Ne jamais copier de phrases des sources : tout réécrire.
 6. Finir par le bloc sources :
    ```
    <div class="sources"><h2>Sources</h2>
