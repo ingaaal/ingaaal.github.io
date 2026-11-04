@@ -23,7 +23,7 @@ Public : étudiants de 17 à 25 ans. On tutoie le lecteur.
    - Sections `##` courtes, listes, un tableau dès qu'il y a des montants.
    - **Un exemple concret chiffré** (« Tu es à l'échelon 2 et… », « Tu loues un studio à 450 €… ») construit uniquement avec des chiffres vérifiés ; si un montant est hypothétique, le présenter clairement comme un exemple.
    - **Une section « Les erreurs qui coûtent cher »** (ou équivalent) avec 3 à 4 erreurs fréquentes.
-   - **Une section « Questions fréquentes »** à la fin : 3 à 4 questions telles que les gens les tapent sur Google (en **gras**), réponse courte en dessous.
+   - **Une section « Questions fréquentes »** à la fin : 3 à 4 questions telles que les gens les tapent sur Google, chaque question seule sur sa ligne en **gras**, puis une ligne vide, puis la réponse courte.
    - **2 liens internes minimum** vers d'autres articles du site quand c'est pertinent, au format `[texte](/site-auto/<slug>/)`. Si un nouvel article est lié à un ancien, ajouter aussi un lien depuis l'ancien vers le nouveau.
    - Phrases simples, tutoiement, pas de remplissage, pas de formules creuses (« dans cet article », « il est important de noter »). Ne jamais copier de phrases des sources : tout réécrire.
 6. Finir par le bloc sources :

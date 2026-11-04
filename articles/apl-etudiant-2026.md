@@ -60,15 +60,19 @@ Compte en général 2 à 6 semaines de traitement.
 ## Questions fréquentes
 
 **Peut-on toucher l'APL en habitant chez ses parents ?**
+
 Non. L'aide est réservée à un logement que tu loues et qui est ta résidence principale.
 
 **Peut-on cumuler APL et bourse Crous ?**
+
 Oui, les deux se cumulent. Être boursier augmente même souvent le montant de l'APL.
 
 **L'APL est-elle versée au propriétaire ou à moi ?**
+
 Ça dépend du logement. Dans beaucoup de résidences, elle est versée directement au bailleur et déduite de ton loyer. Sinon, tu la reçois sur ton compte.
 
 **Combien de temps faut-il pour toucher la première APL ?**
+
 Compte en général 2 à 6 semaines de traitement selon ta CAF. Les paiements arrivent ensuite chaque mois.
 
 <div class="sources"><h2>Sources</h2>

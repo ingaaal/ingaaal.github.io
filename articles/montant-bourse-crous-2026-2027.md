@@ -65,15 +65,19 @@ Il faut refaire le dossier **chaque année**, même si rien n'a changé.
 ## Questions fréquentes
 
 **Quand la bourse est-elle versée ?**
+
 Chaque mois, de septembre à juin, en général en début de mois. Le premier versement peut arriver un peu plus tard si ton dossier a été traité après la rentrée.
 
 **Peut-on cumuler bourse et job étudiant ?**
+
 Oui. Tes revenus personnels ne sont pas pris en compte pour la bourse, puisque ce sont ceux de tes parents qui comptent. Attention seulement à rester assidu en cours.
 
 **Peut-on cumuler la bourse avec l'APL ?**
+
 Oui, les deux se cumulent. Être boursier fait même souvent monter le montant de l'APL.
 
 **Je suis à l'échelon 0 : ça sert à quoi ?**
+
 Tu ne touches pas d'argent, mais tu ne paies ni les frais d'inscription à l'université ni la CVEC.
 
 <div class="sources"><h2>Sources</h2>

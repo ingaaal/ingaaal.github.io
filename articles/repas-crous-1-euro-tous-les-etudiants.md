@@ -56,12 +56,15 @@ Quelques astuces pour ne pas perdre ta pause :
 ## Questions fréquentes
 
 **Faut-il être boursier pour payer 1 € ?**
+
 Non. Depuis le 4 mai 2026, tous les étudiants paient 1 €, boursiers ou non.
 
 **Le repas à 1 € est-il disponible le soir ?**
+
 Oui, dans les restaurants Crous qui sont ouverts le soir.
 
 **Les alternants y ont-ils droit ?**
+
 Oui. Les alternants, apprentis, doctorants et volontaires en service civique en bénéficient aussi.
 
 <div class="sources"><h2>Sources</h2>
