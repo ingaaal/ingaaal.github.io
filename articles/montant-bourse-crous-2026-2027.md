@@ -70,7 +70,7 @@ Chaque mois, de septembre à juin, en général en début de mois. Le premier ve
 
 **Peut-on cumuler bourse et job étudiant ?**
 
-Oui. Tes revenus personnels ne sont pas pris en compte pour la bourse, puisque ce sont ceux de tes parents qui comptent. Attention seulement à rester assidu en cours.
+Oui. Tes revenus personnels ne sont pas pris en compte pour la bourse, puisque ce sont ceux de tes parents qui comptent. Attention seulement à rester assidu en cours : voici [combien d'heures tu peux travailler par semaine](/site-auto/job-etudiant-combien-heures-par-semaine/).
 
 **Peut-on cumuler la bourse avec l'APL ?**
 
