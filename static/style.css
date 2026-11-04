@@ -1,0 +1,76 @@
+/* Fin de Mois — papier, encre, surligneur */
+:root{
+  --papier:#fffef8;
+  --encre:#1b1b1f;
+  --gris:#5d5f68;
+  --ligne:#e9e6da;
+  --surligneur:#ffe24a;
+  --stylo:#d1243b;
+  --bleu:#2346c8;
+  --titre:"Bricolage Grotesque",system-ui,sans-serif;
+  --texte:"Literata",Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--papier);color:var(--encre);font-family:var(--texte);font-size:19px;line-height:1.7}
+a{color:var(--bleu)}
+:focus-visible{outline:3px solid var(--bleu);outline-offset:2px}
+.w{max-width:1040px;margin:0 auto;padding-inline:24px}
+
+/* en-tête */
+.tete{border-bottom:2px solid var(--encre)}
+.tete .w{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding-block:20px;flex-wrap:wrap}
+.logo{font-family:var(--titre);font-weight:800;font-size:28px;text-decoration:none;color:var(--encre);letter-spacing:-.02em}
+.logo span{background:linear-gradient(transparent 55%,var(--surligneur) 55%,var(--surligneur) 90%,transparent 90%)}
+.tete nav{display:flex;gap:22px;font-family:var(--titre);font-size:16px}
+.tete nav a{color:var(--encre);text-decoration:none}
+.tete nav a:hover{text-decoration:underline;text-decoration-thickness:2px}
+
+/* accueil */
+.une{padding-block:64px 40px;display:grid;grid-template-columns:1.3fr .7fr;gap:48px;align-items:end;border-bottom:1px solid var(--ligne)}
+.une h1{font-family:var(--titre);font-weight:800;font-size:clamp(40px,6vw,68px);line-height:1.02;letter-spacing:-.03em}
+.une p{color:var(--gris);margin-top:18px;max-width:46ch}
+.ticket{background:#fff;border:1px solid var(--ligne);padding:22px 22px 30px;font-family:var(--titre);font-size:15px;position:relative;
+  mask:radial-gradient(circle 7px at 50% 100%,transparent 98%,#000) 0 0/18px 100% repeat-x;-webkit-mask:radial-gradient(circle 7px at 50% 100%,transparent 98%,#000) 0 0/18px 100% repeat-x;transform:rotate(-1.5deg);box-shadow:0 10px 24px -14px rgba(0,0,0,.35)}
+.ticket b{display:block;font-size:13px;color:var(--gris);font-weight:600;margin-bottom:10px}
+.ticket div{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px dashed var(--ligne)}
+.ticket .tot{border:0;font-weight:800;font-size:18px;padding-top:10px}
+.ticket .tot span:last-child{background:var(--surligneur);padding:0 4px}
+
+.liste{padding-block:44px 80px}
+.liste h2{font-family:var(--titre);font-size:15px;color:var(--gris);font-weight:600;margin-bottom:8px}
+.art{display:grid;grid-template-columns:120px 1fr;gap:24px;padding:26px 0;border-bottom:1px solid var(--ligne);text-decoration:none;color:inherit}
+.art time{font-family:var(--titre);font-size:14px;color:var(--gris);padding-top:6px}
+.art h3{font-family:var(--titre);font-weight:700;font-size:26px;line-height:1.15;letter-spacing:-.01em}
+.art p{color:var(--gris);font-size:17px;margin-top:6px}
+.art:hover h3{text-decoration:underline;text-decoration-color:var(--surligneur);text-decoration-thickness:6px;text-underline-offset:-2px}
+.cat{display:inline-block;font-family:var(--titre);font-size:13px;font-weight:600;color:var(--stylo);margin-bottom:4px}
+
+/* article */
+.article{max-width:720px;margin:0 auto;padding:56px 24px 80px}
+.article .cat{font-size:15px}
+.article h1{font-family:var(--titre);font-weight:800;font-size:clamp(34px,5vw,52px);line-height:1.06;letter-spacing:-.025em;margin-bottom:16px}
+.meta{font-family:var(--titre);font-size:15px;color:var(--gris);padding-bottom:26px;margin-bottom:34px;border-bottom:1px solid var(--ligne)}
+.corps h2{font-family:var(--titre);font-weight:800;font-size:30px;line-height:1.15;margin:48px 0 14px;letter-spacing:-.015em}
+.corps h3{font-family:var(--titre);font-weight:700;font-size:22px;margin:32px 0 10px}
+.corps p,.corps ul,.corps ol{margin-bottom:20px}
+.corps ul,.corps ol{padding-left:24px}
+.corps li{margin-bottom:8px}
+.corps strong{background:linear-gradient(transparent 60%,var(--surligneur) 60%)}
+.corps table{width:100%;border-collapse:collapse;margin:8px 0 28px;font-family:var(--titre);font-size:16px}
+.corps th{text-align:left;border-bottom:2px solid var(--encre);padding:10px 8px}
+.corps td{border-bottom:1px solid var(--ligne);padding:10px 8px}
+.corps blockquote{border-left:4px solid var(--stylo);padding:4px 0 4px 18px;margin:0 0 24px;color:var(--gris)}
+.sources{margin-top:48px;padding-top:20px;border-top:1px solid var(--ligne);font-size:15px;color:var(--gris)}
+.sources h2{font-size:18px;margin:0 0 8px}
+.maj{font-size:15px;color:var(--gris);font-style:italic}
+
+footer{border-top:2px solid var(--encre);font-family:var(--titre);font-size:14px;color:var(--gris)}
+footer .w{padding-block:26px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+@media(max-width:760px){
+  body{font-size:18px}
+  .une{grid-template-columns:1fr;padding-top:40px}
+  .ticket{max-width:340px}
+  .art{grid-template-columns:1fr;gap:4px}
+  .corps table{font-size:14px}
+}
