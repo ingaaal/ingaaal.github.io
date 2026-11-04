@@ -42,6 +42,7 @@ def page(titre, desc, url, contenu, schema=None):
 <title>{html.escape(titre)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{url}">
+<meta name="google-site-verification" content="ZIUyGgv791zJBAkmzFOC50TGnV4PW-4g3ofcVsOqbW4" />
 <meta property="og:title" content="{html.escape(titre)}">
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:type" content="website">
