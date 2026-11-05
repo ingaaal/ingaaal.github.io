@@ -50,6 +50,8 @@ Si tu es aussi boursier à l'échelon 2, avec 307 € par mois, et que tu déjeu
 
 Compte en général 2 à 6 semaines de traitement.
 
+Pas de garant pour signer le bail ? La [garantie Visale](/site-auto/garantie-visale-etudiant/) se porte caution gratuitement pour les étudiants de 30 ans et moins.
+
 ## Les erreurs qui font perdre des mois d'aide
 
 - **Attendre d'avoir « le temps »** : l'APL n'est pas versée pour les mois passés avant ta demande. Fais-la la semaine où tu emménages.
