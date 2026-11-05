@@ -26,18 +26,21 @@ Public : étudiants de 17 à 25 ans. On tutoie le lecteur.
    - **Une section « Questions fréquentes »** à la fin : 3 à 4 questions telles que les gens les tapent sur Google, chaque question seule sur sa ligne en **gras**, puis une ligne vide, puis la réponse courte.
    - **2 liens internes minimum** vers d'autres articles du site quand c'est pertinent, au format `[texte](/site-auto/<slug>/)`. Si un nouvel article est lié à un ancien, ajouter aussi un lien depuis l'ancien vers le nouveau.
    - Phrases simples, tutoiement, pas de remplissage, pas de formules creuses (« dans cet article », « il est important de noter »). Ne jamais copier de phrases des sources : tout réécrire.
-6. Finir par le bloc sources :
+6. Finir par le bloc sources. Chaque source est un lien Markdown vers la page réellement lue (URL exacte, jamais devinée), séparées par des points-virgules :
    ```
    <div class="sources"><h2>Sources</h2>
-   Liste des sources, séparées par des points-virgules.
+   [Organisme, « Titre de la page »](https://url-exacte) ; [Autre source, date](https://url-exacte).
    </div>
    ```
-7. Lancer `python3 build.py` (installer `markdown` avec `pip install --break-system-packages markdown` si besoin), vérifier qu'il n'y a pas d'erreur.
-8. Commit sur `main` avec un message clair (« Article : ... ») puis push.
+   Ne citer que des pages effectivement lues pendant la recherche.
+7. Lancer `python3 build.py` (installer `markdown` et `Pillow` avec `pip install --break-system-packages markdown Pillow` si besoin). Le script contrôle chaque article avant de générer le site : en cas d'« ÉCHEC », rien n'est généré ; corriger chaque point listé et relancer. Les lignes « alerte » sont à corriger si c'est possible sans dégrader l'article.
+8. Commit sur `main` avec un message clair (« Article : ... ») puis push. Inclure `docs/` et les images de partage créées dans `static/og/`.
 
 ## Mettre à jour
 
 Si un article existant contient un montant ou une règle qui a changé, le corriger et ajouter `updated: AAAA-MM-JJ` dans son en-tête plutôt que d'écrire un nouvel article.
+
+La date affichée « Infos vérifiées le » est `updated` si présent, sinon `date`. Ne modifier `updated` qu'après avoir revérifié l'article sur les sources officielles.
 
 ## Interdits
 

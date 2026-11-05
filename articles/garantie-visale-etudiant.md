@@ -82,5 +82,5 @@ Quelques jours ouvrés si ton dossier est complet et conforme. Un document manqu
 Pour boucler ton budget logement, vérifie aussi le [montant de ta bourse Crous](/site-auto/montant-bourse-crous-2026-2027/) : c'est souvent elle qui t'aide à payer ton loyer chaque mois.
 
 <div class="sources"><h2>Sources</h2>
-Action Logement, « La garantie Visale » (actionlogement.fr) ; ANIL, « Louer un logement quand on n'a pas de garant », à jour au 28 mai 2026 (anil.org) ; etudiant.gouv.fr, « Aide pour la caution : Visale se porte garant pour les étudiants ! » ; visale.fr.
+[Action Logement, page sur la garantie Visale](https://www.actionlogement.fr/la-garantie-visale) ; [ANIL, fiche sur la location sans garant, à jour au 28 mai 2026](https://www.anil.org/parole-expert-logement-location-pas-garant/) ; [etudiant.gouv.fr, « Aide pour la caution : Visale se porte garant pour les étudiants ! » (2021)](https://www.etudiant.gouv.fr/fr/aide-pour-la-caution-visale-se-porte-garant-pour-les-etudiants-739).
 </div>

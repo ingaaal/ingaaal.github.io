@@ -86,3 +86,22 @@ footer .w{padding-block:26px;display:flex;justify-content:space-between;gap:16px
 .aussi li{margin:6px 0;font-family:var(--titre);font-size:17px}
 .corps h2+p strong,.corps p>strong:first-child{white-space:normal}
 .corps p:has(>strong:only-child){margin-bottom:4px;margin-top:22px}
+
+/* fil d'Ariane, catégories, vérification */
+.fil{font-family:var(--titre);font-size:14px;color:var(--gris);margin-bottom:14px}
+.fil a{color:var(--gris)}
+.fil span[aria-hidden]{margin:0 4px}
+a.cat{text-decoration:none}
+a.cat:hover{text-decoration:underline}
+.verif{display:inline-block;margin-left:10px;padding:1px 8px;border-radius:3px;background:#eef6ea;color:#2c6b2f;font-size:14px}
+.verif::before{content:"✓ "}
+.avert{margin-top:28px;font-size:15px;color:var(--gris);font-style:italic}
+.sources a{color:var(--gris);text-decoration-thickness:1px}
+.cats{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 10px}
+.cats a{font-family:var(--titre);font-size:14px;font-weight:600;text-decoration:none;color:var(--encre);border:1.5px solid var(--encre);border-radius:999px;padding:4px 14px}
+.cats a:hover{background:var(--surligneur)}
+.entete-cat{padding-block:48px 8px;border-bottom:1px solid var(--ligne)}
+.entete-cat h1{font-family:var(--titre);font-weight:800;font-size:clamp(36px,5vw,56px);letter-spacing:-.03em;line-height:1.05}
+.entete-cat p{color:var(--gris);margin:10px 0 14px}
+footer a{color:var(--gris)}
+@media(max-width:760px){.verif{margin:6px 0 0;display:table}}

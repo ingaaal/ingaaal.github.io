@@ -1,0 +1,2 @@
+Police Inter (Rasmus Andersson), licence SIL Open Font License 1.1 : https://openfontlicense.org
+Utilisée pour générer les images de partage (static/og/).
