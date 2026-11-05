@@ -19,8 +19,14 @@ a{color:var(--bleu)}
 /* en-tête */
 .tete{border-bottom:2px solid var(--encre)}
 .tete .w{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding-block:20px;flex-wrap:wrap}
-.logo{font-family:var(--titre);font-weight:800;font-size:28px;text-decoration:none;color:var(--encre);letter-spacing:-.02em}
-.logo span{background:linear-gradient(transparent 55%,var(--surligneur) 55%,var(--surligneur) 90%,transparent 90%)}
+.logo{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:var(--encre)}
+.logo-mark{width:48px;height:48px;flex:none;overflow:visible;transition:transform .2s}
+.logo:hover .logo-mark{transform:rotate(-4deg) scale(1.04)}
+.logo-txt{display:flex;flex-direction:column;line-height:1}
+.logo-nom{font-family:var(--titre);font-weight:800;font-size:28px;letter-spacing:-.03em}
+.logo-mois{background:linear-gradient(transparent 52%,var(--surligneur) 52%,var(--surligneur) 92%,transparent 92%);padding:0 3px;margin-left:-1px;border-radius:2px}
+.logo-sous{font-family:var(--titre);font-weight:600;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--stylo);margin-top:6px}
+.tete .w{align-items:center}
 .tete nav{display:flex;gap:22px;font-family:var(--titre);font-size:16px}
 .tete nav a{color:var(--encre);text-decoration:none}
 .tete nav a:hover{text-decoration:underline;text-decoration-thickness:2px}
