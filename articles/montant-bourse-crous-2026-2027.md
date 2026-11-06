@@ -78,7 +78,7 @@ Oui, les deux se cumulent. Être boursier fait même souvent monter le montant d
 
 **Je suis à l'échelon 0 : ça sert à quoi ?**
 
-Tu ne touches pas d'argent, mais tu ne paies ni les frais d'inscription à l'université ni la CVEC.
+Tu ne touches pas d'argent, mais tu ne paies ni les frais d'inscription à l'université ni la [CVEC (105 € en 2026-2027)](/site-auto/cvec-2026-2027-montant-exoneration/).
 
 <div class="sources"><h2>Sources</h2>
 Arrêtés du 26 mars 2026 (plafonds) et du 10 avril 2026 (montants), Légifrance ; etudiant.gouv.fr ; CIDJ, « Bourse Crous : quels plafonds de ressources et quels montants en 2026-2027 », octobre 2026 ; aide-sociale.fr, « Simulation montant bourse Crous ».

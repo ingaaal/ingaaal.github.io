@@ -21,6 +21,8 @@ Tous les étudiants inscrits dans un établissement d'enseignement supérieur, s
 
 Tu n'as aucun dossier à remplir. La seule chose indispensable, c'est un compte Izly actif.
 
+Le seul passage obligé, c'est ton inscription, qui demande l'attestation [CVEC (105 € en 2026-2027, gratuite pour les boursiers)](/site-auto/cvec-2026-2027-montant-exoneration/).
+
 ## Comment payer 1 € : la méthode en 3 étapes
 
 Izly est le moyen de paiement des Crous. Tu le recharges en ligne et tu paies en caisse avec ta carte étudiante ou ton téléphone.
