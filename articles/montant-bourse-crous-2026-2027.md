@@ -32,7 +32,7 @@ L'échelon 0 ne verse pas d'argent, mais il t'exonère des frais d'inscription �
 
 Prenons un exemple. Tu es à l'échelon 2 et tu touches **307,10 € par mois**. Tu manges au restaurant universitaire tous les midis de semaine : avec le [repas Crous à 1 €](/site-auto/repas-crous-1-euro-tous-les-etudiants/), ça te coûte environ 20 € par mois. Il te reste donc près de 290 € pour le reste : transport, téléphone, courses du soir.
 
-Si tu loues un logement, l'[APL](/site-auto/apl-etudiant-2026/) s'ajoute à la bourse, et les boursiers en touchent généralement un peu plus que les autres. Bourse et APL se cumulent sans problème.
+Si tu loues un logement, l'[APL](/site-auto/apl-etudiant-2026/) s'ajoute à la bourse, et les boursiers en touchent généralement un peu plus que les autres. Bourse et APL se cumulent sans problème. Si ça ne suffit toujours pas, le [prêt étudiant garanti par l'État](/site-auto/pret-etudiant-garanti-etat/) permet d'emprunter sans caution, mais il faudra le rembourser.
 
 ## Qu'est-ce qui décide de ton échelon ?
 
