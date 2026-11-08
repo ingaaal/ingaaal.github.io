@@ -54,6 +54,8 @@ Morale : Visale protège ton propriétaire et te donne du temps, mais la dette r
 
 Fais ta demande dès que tu commences à chercher : arriver aux visites avec un visa déjà prêt rassure le propriétaire.
 
+Tu es en alternance ? Action Logement peut aussi payer une partie de ton loyer chaque mois avec l'[aide Mobili-Jeune](/site-auto/aide-mobili-jeune-alternant/).
+
 ## Les erreurs qui coûtent cher
 
 - **Croire que Visale paie à ta place.** Ce n'est qu'une avance : Action Logement te réclamera chaque euro versé au propriétaire.
