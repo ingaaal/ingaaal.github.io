@@ -59,7 +59,7 @@ Il faut refaire le dossier **chaque année**, même si rien n'a changé.
 
 - **Ne pas faire de demande** parce qu'on pense ne pas y avoir droit. Le DSE est gratuit, et le simulateur officiel te donne une idée en quelques minutes.
 - **Attendre la rentrée.** Un dossier déposé tard est traité tard, et les premiers versements arrivent en retard. Le DSE donne aussi accès aux logements Crous, qui partent vite.
-- **Oublier de signaler un changement.** Si ta famille perd des revenus en cours d'année (chômage, divorce, décès), tu peux demander un réexamen sans attendre l'année suivante.
+- **Oublier de signaler un changement.** Si ta famille perd des revenus en cours d'année (chômage, divorce, décès), tu peux demander un réexamen sans attendre l'année suivante. Et si tu es dans le rouge en attendant, le Crous peut te verser une [aide d'urgence](/site-auto/aide-urgence-crous-etudiant/), cumulable avec la bourse.
 - **Négliger l'assiduité.** Pour garder ta bourse, tu dois être inscrit, suivre les cours et te présenter aux examens. Le Crous peut te demander de rembourser en cas d'absences répétées.
 
 ## Questions fréquentes
