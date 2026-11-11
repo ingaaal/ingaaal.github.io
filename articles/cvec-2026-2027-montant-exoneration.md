@@ -44,7 +44,7 @@ Certains étudiants concernés par la CVEC n'ont pas à la payer :
 
 Attention : **exonéré ne veut pas dire « rien à faire »**. Tu dois quand même te connecter sur cvec.etudiant.gouv.fr, demander ton exonération et obtenir ton attestation, que tu présenteras à ton établissement.
 
-Bonne nouvelle pour les boursiers du Crous : si tu as déjà reçu ta **notification conditionnelle de bourse 2026-2027**, ton statut est reconnu automatiquement et ton attestation d'exonération est délivrée tout de suite. Pour savoir combien tu touches par ailleurs, regarde le [montant de la bourse Crous pour chaque échelon](/site-auto/montant-bourse-crous-2026-2027/).
+Bonne nouvelle pour les boursiers du Crous : si tu as déjà reçu ta **notification conditionnelle de bourse 2026-2027**, ton statut est reconnu automatiquement et ton attestation d'exonération est délivrée tout de suite. Pour savoir combien tu touches par ailleurs, regarde le [montant de la bourse Crous pour chaque échelon](/montant-bourse-crous-2026-2027/).
 
 ## Comment payer la CVEC
 
@@ -69,7 +69,7 @@ En août, tu reçois ta notification de bourse du Crous. Dans ce cas, le rembour
 
 Si tu es boursier d'une région (formation sanitaire ou sociale), c'est différent : tu dois **faire toi-même la demande de remboursement** sur le site, une fois ta notification reçue.
 
-105 €, c'est l'équivalent de 105 repas au resto U, puisque le [repas Crous est à 1 € pour tous les étudiants](/site-auto/repas-crous-1-euro-tous-les-etudiants/). Ça vaut le coup de ne pas les laisser filer.
+105 €, c'est l'équivalent de 105 repas au resto U, puisque le [repas Crous est à 1 € pour tous les étudiants](/repas-crous-1-euro-tous-les-etudiants/). Ça vaut le coup de ne pas les laisser filer.
 
 ## Comment se faire rembourser
 

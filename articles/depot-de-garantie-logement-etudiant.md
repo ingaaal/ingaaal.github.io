@@ -22,7 +22,7 @@ Quelques points à retenir :
 
 - Le montant est calculé **hors charges** : si ton annonce affiche « 500 € charges comprises » avec 50 € de charges, la base est 450 €.
 - Le montant doit être écrit dans le bail. Le propriétaire ne peut pas l'augmenter pendant la location, ni au renouvellement.
-- Le dépôt de garantie n'est pas la même chose que le garant. Le garant (un parent, ou la [garantie Visale](/site-auto/garantie-visale-etudiant/)) s'engage à payer si tu ne paies pas. Le dépôt, c'est ton argent, que tu avances au propriétaire.
+- Le dépôt de garantie n'est pas la même chose que le garant. Le garant (un parent, ou la [garantie Visale](/garantie-visale-etudiant/)) s'engage à payer si tu ne paies pas. Le dépôt, c'est ton argent, que tu avances au propriétaire.
 
 ## Le bail mobilité : zéro dépôt
 
@@ -88,7 +88,7 @@ Oui, mais seulement pour les dégradations dont tu es responsable et avec des ju
 
 Non. Le propriétaire n'a pas le droit d'en demander un. Il peut seulement exiger un garant.
 
-Pour alléger le coût de ton installation, vérifie aussi si tu as droit aux [APL étudiant](/site-auto/apl-etudiant-2026/). Et si tu traverses une vraie difficulté financière, regarde du côté de l'[aide d'urgence du Crous](/site-auto/aide-urgence-crous-etudiant/).
+Pour alléger le coût de ton installation, vérifie aussi si tu as droit aux [APL étudiant](/apl-etudiant-2026/). Et si tu traverses une vraie difficulté financière, regarde du côté de l'[aide d'urgence du Crous](/aide-urgence-crous-etudiant/).
 
 <div class="sources"><h2>Sources</h2>
 [Service Public, « Dépôt de garantie dans un bail d'habitation »](https://www.service-public.gouv.fr/particuliers/vosdroits/F31269) ; [Service Public, « Quelles sont les règles d'un bail mobilité ? »](https://www.service-public.gouv.fr/particuliers/vosdroits/F34759) ; [Service Public, « État des lieux d'entrée dans un bail d'habitation »](https://www.service-public.gouv.fr/particuliers/vosdroits/F31270).

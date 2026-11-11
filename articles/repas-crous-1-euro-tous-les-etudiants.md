@@ -21,7 +21,7 @@ Tous les étudiants inscrits dans un établissement d'enseignement supérieur, s
 
 Tu n'as aucun dossier à remplir. La seule chose indispensable, c'est un compte Izly actif.
 
-Le seul passage obligé, c'est ton inscription, qui demande l'attestation [CVEC (105 € en 2026-2027, gratuite pour les boursiers)](/site-auto/cvec-2026-2027-montant-exoneration/).
+Le seul passage obligé, c'est ton inscription, qui demande l'attestation [CVEC (105 € en 2026-2027, gratuite pour les boursiers)](/cvec-2026-2027-montant-exoneration/).
 
 ## Comment payer 1 € : la méthode en 3 étapes
 
@@ -37,7 +37,7 @@ Un non-boursier qui déjeune au Crous chaque midi de semaine économise environ 
 
 Comparé à un sandwich-boisson acheté en ville, souvent autour de 7 ou 8 €, l'écart grimpe encore plus. Sur 20 déjeuners par mois, tu peux garder plus de 100 € dans ta poche.
 
-Si tu touches aussi la [bourse Crous](/site-auto/montant-bourse-crous-2026-2027/), cet argent va beaucoup plus loin : un étudiant à l'échelon 2 qui mange au Crous chaque midi ne dépense qu'environ 20 € de déjeuners sur ses 307 € de bourse mensuelle.
+Si tu touches aussi la [bourse Crous](/montant-bourse-crous-2026-2027/), cet argent va beaucoup plus loin : un étudiant à l'échelon 2 qui mange au Crous chaque midi ne dépense qu'environ 20 € de déjeuners sur ses 307 € de bourse mensuelle.
 
 ## Le revers : l'attente
 

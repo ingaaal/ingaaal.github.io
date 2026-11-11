@@ -16,7 +16,7 @@ import markdown
 
 RACINE = Path(__file__).parent
 SORTIE = RACINE / "docs"
-BASE = "https://ingaaal.github.io/site-auto"
+BASE = "https://ingaaal.github.io"
 NOM = "Fin de Mois"
 CATEGORIES = ["Aides", "Logement", "Bons plans", "Banque", "Jobs", "Démarches"]
 MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]
@@ -129,13 +129,13 @@ def verifier(arts):
             erreurs.append(f"{n} : bloc sources absent ou mal formé")
         if not any("erreur" in h.lower() for h in re.findall(r"^## (.*)", md, re.M)):
             erreurs.append(f"{n} : pas de section « erreurs » (## Les erreurs qui coûtent cher)")
-        for cible in re.findall(r"\]\(/site-auto/([^)#?]*)", md):
+        for cible in re.findall(r"\]\(/(?!/)([^)#?]*)", md):
             if cible.strip("/") not in pages:
-                erreurs.append(f"{n} : lien interne cassé vers /site-auto/{cible}")
+                erreurs.append(f"{n} : lien interne cassé vers /{cible}")
         for cible in re.findall(r"\]\(([^)]*)\)", md):
-            if not cible.startswith(("/site-auto/", "https://", "http://", "#", "mailto:")):
-                erreurs.append(f"{n} : lien « {cible} » au mauvais format (attendu /site-auto/<slug>/ ou https://...)")
-        nb_liens = len(set(re.findall(r"\]\(/site-auto/([^)#?]*)", md)))
+            if cible.startswith("//") or not cible.startswith(("/", "https://", "http://", "#", "mailto:")):
+                erreurs.append(f"{n} : lien « {cible} » au mauvais format (attendu /<slug>/ ou https://...)")
+        nb_liens = len(set(re.findall(r"\]\(/(?!/)([^)#?]*)", md)))
         if nb_liens < 2:
             alertes.append(f"{n} : {nb_liens} lien(s) interne(s), 2 recommandés")
         mots = len(re.sub(r'<div class="sources">.*', "", md, flags=re.S).split())
@@ -338,7 +338,7 @@ def construire():
 <p>Chaque montant et chaque date viennent des sources officielles (service-public.fr, caf.fr, lescrous.fr, etudiant.gouv.fr, legifrance.gouv.fr…) ou, à défaut, de deux sources sérieuses récentes. Si une information ne peut pas être confirmée, elle n'est pas publiée. Les sources sont listées en bas de chaque article, avec la date de la dernière vérification.</p>
 <p>Les montants peuvent évoluer : en cas de doute, la source officielle fait toujours foi. Fin de Mois donne des informations générales, pas de conseil financier personnalisé.</p>
 <h2 id="erreur">Signaler une erreur</h2>
-<p>Un montant a changé ou une règle n'est plus à jour ? <a href="https://github.com/ingaaal/site-auto/issues/new" rel="nofollow noopener">Signale-le ici</a> (compte GitHub nécessaire), en indiquant l'article et la source officielle. L'article sera corrigé et sa date de vérification mise à jour.</p>
+<p>Un montant a changé ou une règle n'est plus à jour ? <a href="https://github.com/ingaaal/ingaaal.github.io/issues/new" rel="nofollow noopener">Signale-le ici</a> (compte GitHub nécessaire), en indiquant l'article et la source officielle. L'article sera corrigé et sa date de vérification mise à jour.</p>
 </div></main>"""
     (SORTIE / "a-propos").mkdir()
     (SORTIE / "a-propos" / "index.html").write_text(page(f"À propos | {NOM}", "Qui écrit Fin de Mois, comment les articles sont vérifiés et comment signaler une erreur.", f"{BASE}/a-propos/", apropos), encoding="utf-8")

@@ -21,7 +21,7 @@ Le Crous propose deux « aides spécifiques ». Elles ne répondent pas au même
 | Avec la bourse | Cumulable | Non cumulable |
 | Boursiers | Oui | Non (elle remplace une bourse) |
 
-Les plafonds correspondent au montant annuel de l'échelon 2 de la [bourse Crous](/site-auto/montant-bourse-crous-2026-2027/) en 2026-2027 : 3 071 € pour une aide, deux fois plus au maximum sur une même année universitaire.
+Les plafonds correspondent au montant annuel de l'échelon 2 de la [bourse Crous](/montant-bourse-crous-2026-2027/) en 2026-2027 : 3 071 € pour une aide, deux fois plus au maximum sur une même année universitaire.
 
 ## Qui peut demander l'aide d'urgence
 
@@ -49,11 +49,11 @@ Tu es en L2, non boursier, et ton job étudiant s'arrête en octobre parce que l
 
 Tu appelles le Crous, tu obtiens un rendez-vous et tu montres ton dernier bulletin de paie, ton bail et ton relevé bancaire. Si ta situation le justifie, l'assistant social peut demander un versement anticipé pour passer les jours qui viennent, puis la commission examine le reste. Le montant final dépend de ton dossier, mais il ne peut pas dépasser 3 071 €.
 
-En parallèle, mange au Crous : le [repas à 1 €](/site-auto/repas-crous-1-euro-tous-les-etudiants/) est ouvert à tous les étudiants et allège tout de suite ton budget. Et vérifie ton droit à l'[APL](/site-auto/apl-etudiant-2026/) : la perte d'un job peut changer ton calcul.
+En parallèle, mange au Crous : le [repas à 1 €](/repas-crous-1-euro-tous-les-etudiants/) est ouvert à tous les étudiants et allège tout de suite ton budget. Et vérifie ton droit à l'[APL](/apl-etudiant-2026/) : la perte d'un job peut changer ton calcul.
 
 ## Et si tes difficultés durent toute l'année ?
 
-L'aide ponctuelle ne règle pas un manque d'argent permanent. Dans ce cas, c'est l'**allocation annuelle** qu'il faut viser. Elle vaut une bourse : même montant qu'un échelon, versée chaque mois, avec exonération des droits d'inscription et de la [CVEC](/site-auto/cvec-2026-2027-montant-exoneration/).
+L'aide ponctuelle ne règle pas un manque d'argent permanent. Dans ce cas, c'est l'**allocation annuelle** qu'il faut viser. Elle vaut une bourse : même montant qu'un échelon, versée chaque mois, avec exonération des droits d'inscription et de la [CVEC](/cvec-2026-2027-montant-exoneration/).
 
 Elle concerne les étudiants qui n'ont pas droit à la bourse à cause de leur situation familiale, par exemple :
 

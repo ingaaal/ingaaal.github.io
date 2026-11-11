@@ -58,7 +58,7 @@ Le site La finance pour tous donne cet exemple, avec un taux qui variera selon t
 - ensuite, tu rembourses **158,20 € par mois pendant 3 ans** ;
 - avec un TAEG fixe de **3,76 %**, le crédit te coûte **695,92 €** d'intérêts, hors frais de dossier et assurance facultative.
 
-Autrement dit, sur 5 000 € empruntés, tu rends près de 5 700 €. Avec le même taux, emprunter 20 000 € coûterait proportionnellement beaucoup plus. Avant d'emprunter, regarde d'abord les aides que tu n'as pas à rembourser : [la bourse Crous](/site-auto/montant-bourse-crous-2026-2027/) et [l'APL](/site-auto/apl-etudiant-2026/).
+Autrement dit, sur 5 000 € empruntés, tu rends près de 5 700 €. Avec le même taux, emprunter 20 000 € coûterait proportionnellement beaucoup plus. Avant d'emprunter, regarde d'abord les aides que tu n'as pas à rembourser : [la bourse Crous](/montant-bourse-crous-2026-2027/) et [l'APL](/apl-etudiant-2026/).
 
 ## La démarche, étape par étape
 
@@ -95,7 +95,7 @@ Seulement s'il est ressortissant de l'Union européenne ou de l'Espace économiq
 
 Il n'existe pas de taux unique : chaque banque fixe le sien, selon tes études et le type de remboursement. Compare le TAEG proposé par plusieurs banques.
 
-Ce guide présente le fonctionnement du dispositif, pas un conseil personnalisé : vérifie les conditions et le coût exact sur etudiant.gouv.fr et auprès de la banque avant de t'engager. Et si tu préfères éviter de t'endetter, regarde [combien d'heures tu peux travailler à côté de tes études](/site-auto/job-etudiant-combien-heures-par-semaine/).
+Ce guide présente le fonctionnement du dispositif, pas un conseil personnalisé : vérifie les conditions et le coût exact sur etudiant.gouv.fr et auprès de la banque avant de t'engager. Et si tu préfères éviter de t'endetter, regarde [combien d'heures tu peux travailler à côté de tes études](/job-etudiant-combien-heures-par-semaine/).
 
 <div class="sources"><h2>Sources</h2>
 [etudiant.gouv.fr, « Prêt étudiant garanti par l'État »](https://www.etudiant.gouv.fr/fr/pret-etudiant-garanti-par-l-etat-1723) ; [La finance pour tous, « Le prêt étudiant garanti par l'État », mis à jour le 2 septembre 2026](https://www.lafinancepourtous.com/pratique/credit/autres-types-de-credit/pret-etudiant/le-pret-etudiant-garanti-par-l-etat/).

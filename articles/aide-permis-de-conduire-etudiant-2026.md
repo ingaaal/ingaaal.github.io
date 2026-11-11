@@ -43,7 +43,7 @@ Prenons un devis d'auto-école à **1 500 €** (montant donné à titre d'exemp
 - Il te reste **300 €** à payer de ta poche ou avec une aide locale.
 - Tu rembourses 30 € par mois pendant **40 mois**, soit un peu plus de trois ans.
 
-Ça fait 360 € par an. Avec un [job étudiant de quelques heures par semaine](/site-auto/job-etudiant-combien-heures-par-semaine/), c'est jouable, mais prévois-le dans ton budget.
+Ça fait 360 € par an. Avec un [job étudiant de quelques heures par semaine](/job-etudiant-combien-heures-par-semaine/), c'est jouable, mais prévois-le dans ton budget.
 
 ## Le CPF : fermé pour la plupart des étudiants
 
@@ -58,7 +58,7 @@ Bon à savoir : un dossier non éligible peut être accepté sur Mon Compte Form
 
 ## Les aides qui ont disparu en 2026
 
-- **L'aide de 500 € aux apprentis** : supprimée par la loi de finances pour 2026, à partir du 21 février 2026. En alternance, il te reste par exemple l'[aide Mobili-Jeune pour ton loyer](/site-auto/aide-mobili-jeune-alternant/).
+- **L'aide de 500 € aux apprentis** : supprimée par la loi de finances pour 2026, à partir du 21 février 2026. En alternance, il te reste par exemple l'[aide Mobili-Jeune pour ton loyer](/aide-mobili-jeune-alternant/).
 - **L'aide de France Travail pour le permis B** : supprimée depuis le 1er avril 2026. Les demandeurs d'emploi passent par le CPF.
 
 ## Les aides locales, à chercher près de chez toi
@@ -96,7 +96,7 @@ Non. Elle a été supprimée par la loi de finances pour 2026, à partir du 21 f
 
 Oui. Le prêt se rembourse dans tous les cas, à raison de 30 € par mois. En cas d'échec à l'épreuve pratique, tu peux demander un prêt complémentaire de 300 €.
 
-Ce guide présente les dispositifs, pas un conseil personnalisé : avant d'emprunter, vérifie les conditions auprès de ton auto-école et de la banque, et compare avec les autres solutions comme le [prêt étudiant garanti par l'État](/site-auto/pret-etudiant-garanti-etat/).
+Ce guide présente les dispositifs, pas un conseil personnalisé : avant d'emprunter, vérifie les conditions auprès de ton auto-école et de la banque, et compare avec les autres solutions comme le [prêt étudiant garanti par l'État](/pret-etudiant-garanti-etat/).
 
 <div class="sources"><h2>Sources</h2>
 [Service-Public.fr, « Quelles aides pour financer le permis de conduire ? »](https://www.service-public.gouv.fr/particuliers/vosdroits/F13609?lang=en) ; [Service-Public.fr, « Compte formation : dans quels cas le permis de conduire peut-il encore être pris en charge par le CPF ? », février 2026](https://www.service-public.gouv.fr/particuliers/actualites/A17164?lang=en) ; [Service-Public.fr, « Apprentissage : l'aide au permis de conduire pour les apprentis est supprimée », mars 2026](https://www.service-public.gouv.fr/particuliers/actualites/A18840?lang=en) ; [France Travail, « Permis à 1 € par jour »](https://mes-aides.francetravail.fr/etat/permis-a-1par-jour) ; [L'Etudiant, « L'aide au permis de conduire supprimée pour les apprentis », février 2026](https://www.letudiant.fr/etudes/alternance/l-aide-au-permis-de-conduire-supprimee-pour-les-apprentis.html).

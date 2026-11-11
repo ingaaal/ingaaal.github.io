@@ -26,7 +26,7 @@ Pour un étudiant, la CAF ne prend souvent pas tes revenus réels. Elle applique
 | Étudiant boursier | 6 900 € |
 | Étudiant non boursier | 8 600 € |
 
-Ces forfaits sont gelés en 2026, aux mêmes niveaux qu'en 2025. Comme celui des boursiers est plus bas, leur APL est en général un peu plus élevée. C'est une raison de plus pour faire ta demande de [bourse Crous](/site-auto/montant-bourse-crous-2026-2027/), même si tu n'es pas sûr d'y avoir droit.
+Ces forfaits sont gelés en 2026, aux mêmes niveaux qu'en 2025. Comme celui des boursiers est plus bas, leur APL est en général un peu plus élevée. C'est une raison de plus pour faire ta demande de [bourse Crous](/montant-bourse-crous-2026-2027/), même si tu n'es pas sûr d'y avoir droit.
 
 ## Ce qui fait varier ton APL
 
@@ -39,7 +39,7 @@ Ces forfaits sont gelés en 2026, aux mêmes niveaux qu'en 2025. Comme celui des
 
 Imaginons que tu loues un studio à 450 € par mois et que la CAF t'accorde 180 € d'APL, un montant dans la moyenne étudiante. Ton loyer réel tombe à **270 €**.
 
-Si tu es aussi boursier à l'échelon 2, avec 307 € par mois, et que tu déjeunes au [Crous à 1 €](/site-auto/repas-crous-1-euro-tous-les-etudiants/), tes aides couvrent ton loyer et tes déjeuners en semaine. Pour connaître ton montant exact, une seule solution : le simulateur officiel sur caf.fr.
+Si tu es aussi boursier à l'échelon 2, avec 307 € par mois, et que tu déjeunes au [Crous à 1 €](/repas-crous-1-euro-tous-les-etudiants/), tes aides couvrent ton loyer et tes déjeuners en semaine. Pour connaître ton montant exact, une seule solution : le simulateur officiel sur caf.fr.
 
 ## La démarche, étape par étape
 
@@ -50,7 +50,7 @@ Si tu es aussi boursier à l'échelon 2, avec 307 € par mois, et que tu déjeu
 
 Compte en général 2 à 6 semaines de traitement.
 
-Pas de garant pour signer le bail ? La [garantie Visale](/site-auto/garantie-visale-etudiant/) se porte caution gratuitement pour les étudiants de 30 ans et moins.
+Pas de garant pour signer le bail ? La [garantie Visale](/garantie-visale-etudiant/) se porte caution gratuitement pour les étudiants de 30 ans et moins.
 
 ## Les erreurs qui font perdre des mois d'aide
 

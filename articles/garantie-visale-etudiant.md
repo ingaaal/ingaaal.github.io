@@ -42,7 +42,7 @@ Au bout des trois ans, tu peux refaire une demande si tu es toujours éligible.
 - Tu dois ensuite rembourser ces 1 000 € à Action Logement. Tu peux demander un plan de remboursement (un « apurement ») pour étaler la somme.
 - À ton départ, l'état des lieux montre un mur abîmé. Visale peut couvrir la réparation jusqu'à 2 mois de loyer et charges, soit **1 000 €** maximum ici. Cette somme aussi, tu devras la rembourser.
 
-Morale : Visale protège ton propriétaire et te donne du temps, mais la dette reste à ton nom. Si tu as un coup dur, préviens tout de suite ton propriétaire et regarde si tu as droit à l'[APL](/site-auto/apl-etudiant-2026/) pour alléger ton loyer.
+Morale : Visale protège ton propriétaire et te donne du temps, mais la dette reste à ton nom. Si tu as un coup dur, préviens tout de suite ton propriétaire et regarde si tu as droit à l'[APL](/apl-etudiant-2026/) pour alléger ton loyer.
 
 ## La démarche, étape par étape
 
@@ -54,7 +54,7 @@ Morale : Visale protège ton propriétaire et te donne du temps, mais la dette r
 
 Fais ta demande dès que tu commences à chercher : arriver aux visites avec un visa déjà prêt rassure le propriétaire.
 
-Tu es en alternance ? Action Logement peut aussi payer une partie de ton loyer chaque mois avec l'[aide Mobili-Jeune](/site-auto/aide-mobili-jeune-alternant/).
+Tu es en alternance ? Action Logement peut aussi payer une partie de ton loyer chaque mois avec l'[aide Mobili-Jeune](/aide-mobili-jeune-alternant/).
 
 ## Les erreurs qui coûtent cher
 
@@ -81,7 +81,7 @@ Oui. Les résidences Crous acceptent Visale. Pense seulement à refaire ta deman
 
 Quelques jours ouvrés si ton dossier est complet et conforme. Un document manquant suffit à retarder la certification.
 
-Pour boucler ton budget logement, vérifie aussi le [montant de ta bourse Crous](/site-auto/montant-bourse-crous-2026-2027/) : c'est souvent elle qui t'aide à payer ton loyer chaque mois. Et avant de signer, vérifie le plafond du [dépôt de garantie](/site-auto/depot-de-garantie-logement-etudiant/) que ton propriétaire peut te demander.
+Pour boucler ton budget logement, vérifie aussi le [montant de ta bourse Crous](/montant-bourse-crous-2026-2027/) : c'est souvent elle qui t'aide à payer ton loyer chaque mois. Et avant de signer, vérifie le plafond du [dépôt de garantie](/depot-de-garantie-logement-etudiant/) que ton propriétaire peut te demander.
 
 <div class="sources"><h2>Sources</h2>
 [Action Logement, page sur la garantie Visale](https://www.actionlogement.fr/la-garantie-visale) ; [ANIL, fiche sur la location sans garant, à jour au 28 mai 2026](https://www.anil.org/parole-expert-logement-location-pas-garant/) ; [etudiant.gouv.fr, « Aide pour la caution : Visale se porte garant pour les étudiants ! » (2021)](https://www.etudiant.gouv.fr/fr/aide-pour-la-caution-visale-se-porte-garant-pour-les-etudiants-739).

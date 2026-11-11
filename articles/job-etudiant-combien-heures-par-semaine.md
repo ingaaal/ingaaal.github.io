@@ -42,7 +42,7 @@ Ce sont des estimations au Smic : ton salaire réel dépend de ton contrat, des 
 
 Tu travailles **12 heures par semaine** dans un supermarché, payé au Smic, de septembre à juin. Ça te fait environ **507 € net par mois**, donc un peu plus de 5 000 € sur 10 mois.
 
-Si tu es boursier, ça ne touche pas à ta [bourse Crous](/site-auto/montant-bourse-crous-2026-2027/) : ce sont les revenus de tes parents qui comptent, pas les tiens. Côté impôts, tu te retrouves tout près du plafond d'exonération (5 405 € pour les revenus 2025, voir plus bas) : si tu ajoutes un job d'été, la partie qui dépasse sera imposable.
+Si tu es boursier, ça ne touche pas à ta [bourse Crous](/montant-bourse-crous-2026-2027/) : ce sont les revenus de tes parents qui comptent, pas les tiens. Côté impôts, tu te retrouves tout près du plafond d'exonération (5 405 € pour les revenus 2025, voir plus bas) : si tu ajoutes un job d'été, la partie qui dépasse sera imposable.
 
 Et 12 heures, c'est jouable : par exemple deux soirs de 3 heures en semaine et 6 heures le samedi.
 
@@ -65,7 +65,7 @@ En pratique, au Smic, ça correspond à environ 27 heures par semaine. Ce seuil 
 - **Prendre trop d'heures en période d'examens.** Les boursiers doivent être assidus et se présenter aux examens, sinon le Crous peut demander de rembourser la bourse. Négocie tes plannings dès la signature du contrat.
 - **Dépasser les 964 heures quand on est étranger.** Le dépassement peut entraîner un refus de renouvellement de ton titre de séjour. Tiens ton propre compteur si tu as plusieurs employeurs.
 - **Oublier de cocher l'exonération sur la déclaration d'impôts.** Sans cette option, tes salaires sont imposés normalement, même sous le plafond.
-- **Ne pas déclarer ton job à la CAF.** Si tu touches l'[APL](/site-auto/apl-etudiant-2026/), tes ressources entrent dans le calcul : un changement non déclaré peut se traduire par un trop-perçu à rembourser.
+- **Ne pas déclarer ton job à la CAF.** Si tu touches l'[APL](/apl-etudiant-2026/), tes ressources entrent dans le calcul : un changement non déclaré peut se traduire par un trop-perçu à rembourser.
 
 ## Questions fréquentes
 

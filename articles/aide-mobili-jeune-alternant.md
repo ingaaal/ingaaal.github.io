@@ -39,7 +39,7 @@ Le calcul est simple : Action Logement prend ton loyer charges comprises et reti
 
 ## Exemple concret
 
-Tu commences un BTS en apprentissage et tu loues un studio à **350 € charges comprises**. La CAF te verse **220 €** d'[APL](/site-auto/apl-etudiant-2026/). Il te reste 130 € à payer.
+Tu commences un BTS en apprentissage et tu loues un studio à **350 € charges comprises**. La CAF te verse **220 €** d'[APL](/apl-etudiant-2026/). Il te reste 130 € à payer.
 
 Mobili-Jeune couvre **100 €** de ce reste, le maximum. Ton loyer réel tombe à 30 € par mois. Sur 11 mois, ça fait **1 100 €**, et 2 200 € si tu demandes l'aide pour tes deux années de BTS.
 
@@ -86,12 +86,12 @@ Ensuite, c'est toi qui fixes le rythme : chaque fois que tu envoies tes justific
 
 Action Logement présente deux autres coups de pouce cumulables sous conditions :
 
-- la [garantie Visale](/site-auto/garantie-visale-etudiant/), qui sert de garant gratuit auprès de ton propriétaire ;
+- la [garantie Visale](/garantie-visale-etudiant/), qui sert de garant gratuit auprès de ton propriétaire ;
 - l'avance Loca-Pass, un prêt sans intérêts pour payer ton dépôt de garantie.
 
-Pour le montant du Smic, qui sert de référence au plafond de 120 %, jette un œil à notre article sur le [job étudiant et ses heures](/site-auto/job-etudiant-combien-heures-par-semaine/).
+Pour le montant du Smic, qui sert de référence au plafond de 120 %, jette un œil à notre article sur le [job étudiant et ses heures](/job-etudiant-combien-heures-par-semaine/).
 
-Tu comptais sur l'aide de 500 € au permis pour les apprentis ? Elle a été supprimée en 2026 : voici [les aides au permis qui restent](/site-auto/aide-permis-de-conduire-etudiant-2026/).
+Tu comptais sur l'aide de 500 € au permis pour les apprentis ? Elle a été supprimée en 2026 : voici [les aides au permis qui restent](/aide-permis-de-conduire-etudiant-2026/).
 
 ## Questions fréquentes
 

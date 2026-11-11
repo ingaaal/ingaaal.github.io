@@ -30,9 +30,9 @@ L'échelon 0 ne verse pas d'argent, mais il t'exonère des frais d'inscription �
 
 ## Concrètement, ça change quoi dans ton mois ?
 
-Prenons un exemple. Tu es à l'échelon 2 et tu touches **307,10 € par mois**. Tu manges au restaurant universitaire tous les midis de semaine : avec le [repas Crous à 1 €](/site-auto/repas-crous-1-euro-tous-les-etudiants/), ça te coûte environ 20 € par mois. Il te reste donc près de 290 € pour le reste : transport, téléphone, courses du soir.
+Prenons un exemple. Tu es à l'échelon 2 et tu touches **307,10 € par mois**. Tu manges au restaurant universitaire tous les midis de semaine : avec le [repas Crous à 1 €](/repas-crous-1-euro-tous-les-etudiants/), ça te coûte environ 20 € par mois. Il te reste donc près de 290 € pour le reste : transport, téléphone, courses du soir.
 
-Si tu loues un logement, l'[APL](/site-auto/apl-etudiant-2026/) s'ajoute à la bourse, et les boursiers en touchent généralement un peu plus que les autres. Bourse et APL se cumulent sans problème. Si ça ne suffit toujours pas, le [prêt étudiant garanti par l'État](/site-auto/pret-etudiant-garanti-etat/) permet d'emprunter sans caution, mais il faudra le rembourser.
+Si tu loues un logement, l'[APL](/apl-etudiant-2026/) s'ajoute à la bourse, et les boursiers en touchent généralement un peu plus que les autres. Bourse et APL se cumulent sans problème. Si ça ne suffit toujours pas, le [prêt étudiant garanti par l'État](/pret-etudiant-garanti-etat/) permet d'emprunter sans caution, mais il faudra le rembourser.
 
 ## Qu'est-ce qui décide de ton échelon ?
 
@@ -59,7 +59,7 @@ Il faut refaire le dossier **chaque année**, même si rien n'a changé.
 
 - **Ne pas faire de demande** parce qu'on pense ne pas y avoir droit. Le DSE est gratuit, et le simulateur officiel te donne une idée en quelques minutes.
 - **Attendre la rentrée.** Un dossier déposé tard est traité tard, et les premiers versements arrivent en retard. Le DSE donne aussi accès aux logements Crous, qui partent vite.
-- **Oublier de signaler un changement.** Si ta famille perd des revenus en cours d'année (chômage, divorce, décès), tu peux demander un réexamen sans attendre l'année suivante. Et si tu es dans le rouge en attendant, le Crous peut te verser une [aide d'urgence](/site-auto/aide-urgence-crous-etudiant/), cumulable avec la bourse.
+- **Oublier de signaler un changement.** Si ta famille perd des revenus en cours d'année (chômage, divorce, décès), tu peux demander un réexamen sans attendre l'année suivante. Et si tu es dans le rouge en attendant, le Crous peut te verser une [aide d'urgence](/aide-urgence-crous-etudiant/), cumulable avec la bourse.
 - **Négliger l'assiduité.** Pour garder ta bourse, tu dois être inscrit, suivre les cours et te présenter aux examens. Le Crous peut te demander de rembourser en cas d'absences répétées.
 
 ## Questions fréquentes
@@ -70,7 +70,7 @@ Chaque mois, de septembre à juin, en général en début de mois. Le premier ve
 
 **Peut-on cumuler bourse et job étudiant ?**
 
-Oui. Tes revenus personnels ne sont pas pris en compte pour la bourse, puisque ce sont ceux de tes parents qui comptent. Attention seulement à rester assidu en cours : voici [combien d'heures tu peux travailler par semaine](/site-auto/job-etudiant-combien-heures-par-semaine/).
+Oui. Tes revenus personnels ne sont pas pris en compte pour la bourse, puisque ce sont ceux de tes parents qui comptent. Attention seulement à rester assidu en cours : voici [combien d'heures tu peux travailler par semaine](/job-etudiant-combien-heures-par-semaine/).
 
 **Peut-on cumuler la bourse avec l'APL ?**
 
@@ -78,7 +78,7 @@ Oui, les deux se cumulent. Être boursier fait même souvent monter le montant d
 
 **Je suis à l'échelon 0 : ça sert à quoi ?**
 
-Tu ne touches pas d'argent, mais tu ne paies ni les frais d'inscription à l'université ni la [CVEC (105 € en 2026-2027)](/site-auto/cvec-2026-2027-montant-exoneration/).
+Tu ne touches pas d'argent, mais tu ne paies ni les frais d'inscription à l'université ni la [CVEC (105 € en 2026-2027)](/cvec-2026-2027-montant-exoneration/).
 
 <div class="sources"><h2>Sources</h2>
 Arrêtés du 26 mars 2026 (plafonds) et du 10 avril 2026 (montants), Légifrance ; etudiant.gouv.fr ; CIDJ, « Bourse Crous : quels plafonds de ressources et quels montants en 2026-2027 », octobre 2026 ; aide-sociale.fr, « Simulation montant bourse Crous ».
