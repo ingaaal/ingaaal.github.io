@@ -81,7 +81,7 @@ Oui. Les résidences Crous acceptent Visale. Pense seulement à refaire ta deman
 
 Quelques jours ouvrés si ton dossier est complet et conforme. Un document manquant suffit à retarder la certification.
 
-Pour boucler ton budget logement, vérifie aussi le [montant de ta bourse Crous](/site-auto/montant-bourse-crous-2026-2027/) : c'est souvent elle qui t'aide à payer ton loyer chaque mois.
+Pour boucler ton budget logement, vérifie aussi le [montant de ta bourse Crous](/site-auto/montant-bourse-crous-2026-2027/) : c'est souvent elle qui t'aide à payer ton loyer chaque mois. Et avant de signer, vérifie le plafond du [dépôt de garantie](/site-auto/depot-de-garantie-logement-etudiant/) que ton propriétaire peut te demander.
 
 <div class="sources"><h2>Sources</h2>
 [Action Logement, page sur la garantie Visale](https://www.actionlogement.fr/la-garantie-visale) ; [ANIL, fiche sur la location sans garant, à jour au 28 mai 2026](https://www.anil.org/parole-expert-logement-location-pas-garant/) ; [etudiant.gouv.fr, « Aide pour la caution : Visale se porte garant pour les étudiants ! » (2021)](https://www.etudiant.gouv.fr/fr/aide-pour-la-caution-visale-se-porte-garant-pour-les-etudiants-739).
