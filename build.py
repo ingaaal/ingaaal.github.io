@@ -74,6 +74,25 @@ def liens_sources(h):
         return bloc
     return re.sub(r'<div class="sources">.*?</div>', rempl, h, flags=re.S)
 
+def habiller(h):
+    """Mise en forme du corps : chapô, tableaux défilants, sections spéciales (exemple, erreurs, FAQ)."""
+    corps, sep, sources = h.partition('<div class="sources">')
+    corps = re.sub(r"<p>", '<p class="chapo">', corps, count=1)
+    corps = corps.replace("<table>", '<div class="tableau"><table>').replace("</table>", "</table></div>")
+    morceaux = re.split(r"(?=<h2>)", corps)
+    sortie = [morceaux[0]]
+    for m in morceaux[1:]:
+        titre = re.match(r"<h2>(.*?)</h2>", m, re.S).group(1).lower()
+        genre = ("faq" if "questions fréquentes" in titre else "erreurs" if "erreur" in titre
+                 else "exemple" if titre.startswith("exemple") else "")
+        if genre == "faq":
+            m = re.sub(r"<p><strong>(.+?)</strong></p>", r'<p class="q">\1</p>', m)
+        sortie.append(f'<section class="bloc bloc-{genre}">{m.rstrip()}</section>\n' if genre else m)
+    return "".join(sortie) + sep + sources
+
+def minutes(md):
+    return max(1, round(len(re.findall(r"\w+", md)) / 220))
+
 def verifier(arts):
     """Contrôle les articles avant publication. Erreurs = build refusé ; alertes = à corriger si possible."""
     erreurs, alertes = [], []
@@ -210,9 +229,10 @@ def schema_fil(*etapes):
     return {"@context": "https://schema.org", "@type": "BreadcrumbList",
             "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, "item": u} for i, (n, u) in enumerate(etapes)]}
 
-def carte(a):
-    return f"""<a class="art" href="{BASE}/{a['slug']}/"><time datetime="{a['date']}">{date_fr(a['date'])}</time>
-<div><span class="cat">{html.escape(a['category'])}</span><h3>{html.escape(a['title'])}</h3><p>{html.escape(a['description'])}</p></div></a>"""
+def carte(a, une=False):
+    return f"""<a class="art{' art-une' if une else ''}" href="{BASE}/{a['slug']}/" data-cat="{slugifier(a['category'])}">
+<span class="art-haut"><span class="cat">{html.escape(a['category'])}</span><time datetime="{a['date']}">{date_fr(a['date'])}</time></span>
+<h3>{html.escape(a['title'])}</h3><p>{html.escape(a['description'])}</p><span class="lire">{'Lire l’article' if une else 'Lire'} →</span></a>"""
 
 def lire_tous():
     arts, erreurs = [], []
@@ -254,17 +274,17 @@ def construire():
         image = image_partage(a, d)
         verifie = a.get("updated", a["date"])
         autres = sorted([b for b in arts if b["slug"] != a["slug"]], key=lambda b: b["category"] != a["category"])[:3]
-        aussi = ('<aside class="aussi"><h2>À lire aussi</h2><ul>' + "".join(f'<li><a href="{BASE}/{b["slug"]}/">{html.escape(b["title"])}</a></li>' for b in autres) + '</ul></aside>') if autres else ""
+        aussi = ('<aside class="aussi"><h2>À lire aussi</h2><div class="aussi-grille">' + "".join(f'<a href="{BASE}/{b["slug"]}/" data-cat="{slugifier(b["category"])}"><span class="cat">{html.escape(b["category"])}</span>{html.escape(b["title"])}</a>' for b in autres) + '</div></aside>') if autres else ""
         etapes = (accueil_fil, (a["category"], url_cat(a["category"])), (a["title"], url))
         contenu = f"""<main class="article">
 {fil(*etapes)}
 <a class="cat" href="{url_cat(a['category'])}">{html.escape(a['category'])}</a>
 <h1>{html.escape(a['title'])}</h1>
-<p class="meta">Publié le {date_fr(a['date'])}<span class="verif">Infos vérifiées le {date_fr(verifie)}</span></p>
-<div class="corps">{a['corps']}</div>
+<p class="meta">Publié le {date_fr(a['date'])} · {minutes(a['md'])} min de lecture<span class="verif">Infos vérifiées le {date_fr(verifie)}</span></p>
+<div class="corps">{habiller(a['corps'])}</div>
 <p class="avert">Les montants et les règles peuvent changer : en cas de doute, la source officielle fait foi. <a href="{BASE}/a-propos/#erreur">Signaler une erreur</a></p>
 {aussi}
-<p style="margin-top:40px"><a href="{BASE}/">← Tous les articles</a></p>
+<p class="retour"><a href="{BASE}/">← Tous les articles</a></p>
 </main>"""
         article = {"@context": "https://schema.org", "@type": "Article", "headline": a["title"],
                    "description": a["description"], "datePublished": a["date"], "dateModified": verifie,
@@ -278,7 +298,7 @@ def construire():
                             "mainEntity": [{"@type": "Question", "name": x, "acceptedAnswer": {"@type": "Answer", "text": r}} for x, r in q]})
         (d / "index.html").write_text(page(f"{a['title']} | {NOM}", a["description"], url, contenu, schemas, image, "article"), encoding="utf-8")
 
-    puces = '<nav class="cats" aria-label="Catégories">' + "".join(f'<a href="{url_cat(c)}">{html.escape(c)}</a>' for c in cats) + "</nav>"
+    puces = '<nav class="cats" aria-label="Catégories">' + "".join(f'<a href="{url_cat(c)}" data-cat="{slugifier(c)}">{html.escape(c)} <small>{sum(a["category"] == c for a in arts)}</small></a>' for c in cats) + "</nav>"
 
     for c in cats:
         url = url_cat(c)
@@ -289,7 +309,7 @@ def construire():
 <h1>{html.escape(c)}</h1>
 <p>{n} article{'s' if n > 1 else ''} vérifié{'s' if n > 1 else ''} sur les sources officielles.</p>
 {puces}</section>
-<section class="liste">{"".join(carte(a) for a in liste)}</section>
+<section class="liste"><div class="grille">{"".join(carte(a) for a in liste)}</div></section>
 </main>"""
         desc = f"Les articles Fin de Mois de la catégorie {c} : montants à jour, démarches et pièges à éviter pour les étudiants."
         d = SORTIE / "categorie" / slugifier(c); d.mkdir(parents=True)
@@ -306,7 +326,8 @@ def construire():
 <div><span>Bourse échelon 2</span><span>− 307,10 €</span></div>
 <div class="tot"><span>Il te reste</span><span>17,10 €</span></div></div>
 </section>
-<section class="liste" id="articles"><h2>Derniers articles</h2>{puces}{"".join(carte(a) for a in arts)}</section>
+<section class="liste" id="articles"><h2>À la une</h2>{carte(arts[0], True) if arts else ""}
+<div class="liste-tete"><h2>Tous les articles</h2>{puces}</div><div class="grille">{"".join(carte(a) for a in arts[1:])}</div></section>
 </main>"""
     site = {"@context": "https://schema.org", "@type": "WebSite", "name": NOM, "url": f"{BASE}/", "inLanguage": "fr"}
     (SORTIE / "index.html").write_text(page(f"{NOM} : le budget étudiant expliqué simplement", "Aides étudiantes, bourses, APL, bons plans : les montants à jour et les démarches expliquées simplement.", f"{BASE}/", accueil, [site]), encoding="utf-8")
