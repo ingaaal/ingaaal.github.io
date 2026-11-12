@@ -65,6 +65,8 @@ Elle concerne les étudiants qui n'ont pas droit à la bourse à cause de leur s
 
 Première étape obligatoire : faire une demande de bourse dans ton dossier social étudiant (DSE), puis contacter le service social du Crous.
 
+Bonus : l'allocation annuelle te permet aussi de demander seul la [Complémentaire santé solidaire](/complementaire-sante-solidaire-etudiant/), une mutuelle gratuite ou à 8 € par mois.
+
 ## Les erreurs qui coûtent cher
 
 - **Croire que c'est réservé aux boursiers.** L'aide ponctuelle est ouverte aux non-boursiers. Beaucoup passent à côté pour cette seule raison.
