@@ -26,6 +26,8 @@ La bourse est versée en 10 mensualités, de septembre à juin. Certains étudia
 
 Si tu étudies en outre-mer, chaque montant annuel est augmenté de 300 €.
 
+Si tu as eu la mention très bien au bac, l'[aide au mérite](/aide-au-merite-etudiant-mention-tres-bien/) ajoute 900 € par an à ta bourse.
+
 L'échelon 0 ne verse pas d'argent, mais il t'exonère des frais d'inscription à l'université et de la CVEC. Rien que ça représente déjà une belle économie à la rentrée.
 
 ## Concrètement, ça change quoi dans ton mois ?
