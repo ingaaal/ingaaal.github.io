@@ -91,6 +91,8 @@ Action Logement présente deux autres coups de pouce cumulables sous conditions 
 
 Pour le montant du Smic, qui sert de référence au plafond de 120 %, jette un œil à notre article sur le [job étudiant et ses heures](/job-etudiant-combien-heures-par-semaine/).
 
+Tu loues deux logements, un près de l'école et un près de l'entreprise ? Attention, le second peut être soumis à la [taxe d'habitation](/taxe-habitation-etudiant/).
+
 Tu comptais sur l'aide de 500 € au permis pour les apprentis ? Elle a été supprimée en 2026 : voici [les aides au permis qui restent](/aide-permis-de-conduire-etudiant-2026/).
 
 ## Questions fréquentes
