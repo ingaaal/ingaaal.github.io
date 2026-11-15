@@ -88,7 +88,7 @@ Oui, mais seulement pour les dégradations dont tu es responsable et avec des ju
 
 Non. Le propriétaire n'a pas le droit d'en demander un. Il peut seulement exiger un garant.
 
-Pour alléger le coût de ton installation, vérifie aussi si tu as droit aux [APL étudiant](/apl-etudiant-2026/). Et si tu traverses une vraie difficulté financière, regarde du côté de l'[aide d'urgence du Crous](/aide-urgence-crous-etudiant/).
+Avant la remise des clés, prépare aussi ton attestation d'[assurance habitation](/assurance-habitation-etudiant-obligatoire/) : elle est obligatoire. Pour alléger le coût de ton installation, vérifie aussi si tu as droit aux [APL étudiant](/apl-etudiant-2026/). Et si tu traverses une vraie difficulté financière, regarde du côté de l'[aide d'urgence du Crous](/aide-urgence-crous-etudiant/).
 
 <div class="sources"><h2>Sources</h2>
 [Service Public, « Dépôt de garantie dans un bail d'habitation »](https://www.service-public.gouv.fr/particuliers/vosdroits/F31269) ; [Service Public, « Quelles sont les règles d'un bail mobilité ? »](https://www.service-public.gouv.fr/particuliers/vosdroits/F34759) ; [Service Public, « État des lieux d'entrée dans un bail d'habitation »](https://www.service-public.gouv.fr/particuliers/vosdroits/F31270).
