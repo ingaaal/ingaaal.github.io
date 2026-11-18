@@ -21,11 +21,11 @@ NOM = "Fin de Mois"
 CATEGORIES = ["Aides", "Logement", "Bons plans", "Banque", "Jobs", "Démarches"]
 # Entrées « Par où commencer ? » de l'accueil : clé (champ situations des articles) -> libellé
 SITUATIONS = {
-    "logement": "Je cherche un logement",
-    "bourse": "Je suis boursier (ou je pourrais l'être)",
-    "travail": "Je bosse : job, alternance ou stage",
-    "rentree": "Je prépare ma rentrée",
-    "galere": "C'est la galère ce mois-ci",
+    "logement": "Me loger",
+    "bourse": "La bourse",
+    "travail": "Job, alternance, stage",
+    "rentree": "Préparer la rentrée",
+    "galere": "Fin de mois difficile",
 }
 MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]
 
@@ -227,7 +227,7 @@ def page(titre, desc, url, contenu, schemas=(), image=None, type_og="website", s
 {og_img}
 <link rel="icon" href="{BASE}/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Literata:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{BASE}/style.css">
 <script src="{BASE}/site.js" defer></script>
 {"".join(f'<script src="{BASE}/{x}" defer></script>' for x in scripts)}
@@ -235,7 +235,7 @@ def page(titre, desc, url, contenu, schemas=(), image=None, type_og="website", s
 </head>
 <body>
 <header class="tete"><div class="w">
-<a class="logo" href="{BASE}/" aria-label="Fin de Mois, accueil"><svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true"><g transform="rotate(-6 24 24)"><rect x="7" y="9" width="34" height="33" rx="4" fill="#fff" stroke="currentColor" stroke-width="2.6"/><path d="M7 13a4 4 0 0 1 4-4h26a4 4 0 0 1 4 4v5H7z" fill="currentColor"/><rect x="15" y="5" width="3.2" height="8" rx="1.6" fill="currentColor"/><rect x="29.8" y="5" width="3.2" height="8" rx="1.6" fill="currentColor"/><text x="24" y="36.5" text-anchor="middle" font-family="Bricolage Grotesque,system-ui,sans-serif" font-weight="800" font-size="16" fill="currentColor" letter-spacing="-.5">31</text></g><path class="logo-cercle" d="M12.5 29.5c1-6.8 9.6-9.6 16.6-8.4 7.3 1.3 10.4 6.6 8.6 11.4-1.9 5-9.7 7.4-16.4 6.3C14.6 37.7 11.2 33.9 12.8 28.6c.9-3 3.4-4.9 6-6" fill="none" stroke="#d1243b" stroke-width="2.2" stroke-linecap="round"/></svg><span class="logo-nom">Fin de <span class="logo-mois">Mois</span></span></a>
+<a class="logo" href="{BASE}/" aria-label="Fin de Mois, accueil"><svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true"><g transform="rotate(-6 24 24)"><rect x="7" y="9" width="34" height="33" rx="4" fill="#fff" stroke="currentColor" stroke-width="2.6"/><path d="M7 13a4 4 0 0 1 4-4h26a4 4 0 0 1 4 4v5H7z" fill="currentColor"/><rect x="15" y="5" width="3.2" height="8" rx="1.6" fill="currentColor"/><rect x="29.8" y="5" width="3.2" height="8" rx="1.6" fill="currentColor"/><text x="24" y="36.5" text-anchor="middle" font-family="Plus Jakarta Sans,system-ui,sans-serif" font-weight="800" font-size="16" fill="currentColor" letter-spacing="-.5">31</text></g><path class="logo-cercle" d="M12.5 29.5c1-6.8 9.6-9.6 16.6-8.4 7.3 1.3 10.4 6.6 8.6 11.4-1.9 5-9.7 7.4-16.4 6.3C14.6 37.7 11.2 33.9 12.8 28.6c.9-3 3.4-4.9 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span class="logo-nom">Fin de Mois</span></a>
 <nav><a class="nav-outil" href="{BASE}/mes-aides/">Mes aides</a><a href="{BASE}/#articles">Articles</a><a class="nav-propos" href="{BASE}/a-propos/">À propos</a><button type="button" class="theme" aria-label="Passer en mode sombre" title="Mode clair / sombre" hidden>{SOLEIL}</button></nav>
 </div></header>
 {contenu}
@@ -257,14 +257,19 @@ def carte(a, une=False):
 <span class="art-haut"><span class="cat">{html.escape(a['category'])}</span><time datetime="{a['date']}">{date_fr(a['date'])}</time></span>
 <h3>{html.escape(a['title'])}</h3><p>{html.escape(a['description'])}</p><span class="lire">{'Lire l’article' if une else 'Lire'} →</span></a>"""
 
-def partage(titre, url, haut=False):
-    """Boutons de partage : WhatsApp, copier le lien, partage natif du téléphone (via site.js)."""
+ICONES = {
+    "wa": '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>',
+    "lien": '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1"/></svg>',
+    "plus": '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>',
+}
+
+def partage(titre, url, intro="Ça peut aider un pote ? Envoie-lui."):
+    """Boutons de partage : WhatsApp, copier le lien, menu de partage du téléphone (via site.js)."""
     texte = urllib.parse.quote(f"{titre} {url}")
-    intro = "" if haut else '<p>Ça peut aider un pote ? Envoie-lui.</p>'
-    return f"""<div class="partage{' partage-haut' if haut else ''}" data-titre="{html.escape(titre)}" data-url="{url}">{intro}<div class="partage-btns">
-<button type="button" class="p-natif" hidden>Partager</button>
-<a class="p-wa" href="https://wa.me/?text={texte}" target="_blank" rel="noopener">WhatsApp</a>
-<button type="button" class="p-copier" hidden>Copier le lien</button></div></div>"""
+    return f"""<div class="partage" data-titre="{html.escape(titre)}" data-url="{url}"><p>{intro}</p><div class="partage-btns">
+<a class="pb pb-wa" href="https://wa.me/?text={texte}" target="_blank" rel="noopener">{ICONES['wa']}WhatsApp</a>
+<button type="button" class="pb p-copier">{ICONES['lien']}<span>Copier le lien</span></button>
+<button type="button" class="pb p-natif" hidden>{ICONES['plus']}Autres apps</button></div></div>"""
 
 def lire_tous():
     arts, erreurs = [], []
@@ -314,7 +319,6 @@ def construire():
 <a class="cat" href="{url_cat(a['category'])}">{html.escape(a['category'])}</a>
 <h1>{html.escape(a['title'])}</h1>
 <p class="meta">Publié le {date_fr(a['date'])} · {minutes(a['md'])} min de lecture<span class="verif">Infos vérifiées le {date_fr(verifie)}</span></p>
-{partage(a['title'], url, True)}
 <div class="corps">{habiller(a['corps'])}</div>
 {partage(a['title'], url)}
 <p class="avert">Les montants et les règles peuvent changer : en cas de doute, la source officielle fait foi. <a href="{BASE}/a-propos/#erreur">Signaler une erreur</a></p>
@@ -356,16 +360,17 @@ def construire():
     accueil = f"""<main class="w">
 <section class="une">
 <div><h1>Le budget étudiant, sans prise de tête.</h1>
-<p>Aides, bons plans, démarches : ce que tu peux vraiment toucher ou économiser, avec les montants à jour et les sources officielles.</p></div>
-<div class="ticket" aria-hidden="true"><b>Exemple de mois étudiant</b>
-<div><span>20 repas Crous</span><span>20,00 €</span></div>
-<div><span>Loyer studio</span><span>450,00 €</span></div>
-<div><span>APL</span><span>− 180,00 €</span></div>
-<div><span>Bourse échelon 2</span><span>− 307,10 €</span></div>
-<div class="tot"><span>Il te reste</span><span>17,10 €</span></div></div>
+<p>Les aides que tu peux toucher, les démarches et les bons plans, avec les montants à jour et les sources officielles.</p>
+<p class="une-cta"><a class="btn btn-1" href="{BASE}/mes-aides/">Trouver mes aides en 1 minute</a><a class="btn btn-2" href="#articles">Voir les articles</a></p></div>
+<a class="apercu" href="{BASE}/mes-aides/" aria-label="Faire le test des aides"><b>Tu as peut-être droit à…</b>
+<span><i>Bourse Crous</i><em>jusqu'à 633 €/mois</em></span>
+<span><i>APL</i><em>100 à 250 €/mois</em></span>
+<span><i>Aide au mérite</i><em>900 €/an</em></span>
+<span><i>Repas Crous</i><em>1 €</em></span>
+<u>Faire le test →</u></a>
 </section>
 <section class="depart" aria-labelledby="depart-titre"><h2 id="depart-titre">Par où commencer ?</h2>
-<div class="sit-grille"><a class="sit sit-outil" href="{BASE}/mes-aides/"><span>Trouve tes aides en 1 minute</span><small>8 questions, aucune donnée envoyée →</small></a>{sits}</div></section>
+<div class="sit-grille">{sits}</div></section>
 <section class="liste" id="articles"><div class="une-bloc"><h2>À la une</h2>{carte(arts[0], True) if arts else ""}</div>
 <div class="liste-tete"><h2 id="liste-titre">Tous les articles</h2>{filtres}</div>
 <p class="filtre-info" role="status" aria-live="polite"></p>
@@ -388,7 +393,7 @@ def construire():
 
     outil = (RACINE / "static" / "mes-aides.html").read_text(encoding="utf-8").replace("{BASE}", BASE)
     urlo = f"{BASE}/mes-aides/"
-    contenu = f"""<main class="article outil">{fil(accueil_fil, ("Mes aides", urlo))}{outil}{partage("Trouve tes aides étudiantes en 1 minute", urlo)}</main>"""
+    contenu = f"""<main class="article outil">{fil(accueil_fil, ("Mes aides", urlo))}{outil}{partage("Quelles aides étudiantes pour toi ? Le test en 1 minute", urlo, "Envoie le test à un pote")}</main>"""
     (SORTIE / "mes-aides").mkdir()
     (SORTIE / "mes-aides" / "index.html").write_text(page(f"Quelles aides étudiantes pour toi ? Le test en 1 minute | {NOM}",
         "Bourse, APL, prime d'activité, Mobili-Jeune, aide au mérite… Réponds à 8 questions et vois les aides étudiantes auxquelles tu as peut-être droit en 2026.",

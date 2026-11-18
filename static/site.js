@@ -25,22 +25,30 @@
   }
 
   /* Partage */
+  function copier(texte) {
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(texte);
+    return new Promise(function (ok, ko) {
+      var t = document.createElement("textarea");
+      t.value = texte; t.setAttribute("readonly", ""); t.style.position = "fixed"; t.style.opacity = "0";
+      document.body.appendChild(t); t.select();
+      try { document.execCommand("copy") ? ok() : ko(); } catch (e) { ko(); }
+      document.body.removeChild(t);
+    });
+  }
   document.querySelectorAll(".partage").forEach(function (bloc) {
     var url = bloc.dataset.url, titre = bloc.dataset.titre;
-    var natif = bloc.querySelector(".p-natif"), copier = bloc.querySelector(".p-copier");
-    if (navigator.share) {
+    var natif = bloc.querySelector(".p-natif"), bouton = bloc.querySelector(".p-copier");
+    if (navigator.share && natif) {
       natif.hidden = false;
-      natif.addEventListener("click", function () {
-        navigator.share({ title: titre, url: url }).catch(function () {});
-      });
+      natif.addEventListener("click", function () { navigator.share({ title: titre, url: url }).catch(function () {}); });
     }
-    if (navigator.clipboard) {
-      copier.hidden = false;
-      copier.addEventListener("click", function () {
-        navigator.clipboard.writeText(url).then(function () {
-          copier.textContent = "Lien copié ✓";
-          setTimeout(function () { copier.textContent = "Copier le lien"; }, 2000);
-        }, function () {});
+    if (bouton) {
+      var libelle = bouton.querySelector("span");
+      bouton.addEventListener("click", function () {
+        copier(url).then(function () {
+          libelle.textContent = "Lien copié !"; bouton.classList.add("ok");
+          setTimeout(function () { libelle.textContent = "Copier le lien"; bouton.classList.remove("ok"); }, 2000);
+        }, function () { window.prompt("Copie ce lien :", url); });
       });
     }
   });
