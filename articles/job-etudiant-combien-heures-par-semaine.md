@@ -56,7 +56,7 @@ Si tu as **25 ans au plus au 1er janvier** de l'année d'imposition, tes salaire
 
 ## La prime d'activité : un bonus si tu travailles beaucoup
 
-Les étudiants salariés peuvent toucher la **prime d'activité** de la CAF, mais seulement s'ils gagnent assez. Depuis juin 2026, ton salaire mensuel doit être d'au moins **1 144 €**, pendant au moins trois mois.
+Les étudiants salariés peuvent toucher la **prime d'activité** de la CAF, mais seulement s'ils gagnent assez. Depuis juin 2026, ton salaire mensuel doit être d'au moins **1 144 €**, pendant au moins trois mois. Conditions, montants et démarche : tout est dans notre article sur la [prime d'activité étudiant](/prime-activite-etudiant-2026/).
 
 En pratique, au Smic, ça correspond à environ 27 heures par semaine. Ce seuil concerne surtout les alternants et les étudiants qui enchaînent les mois pleins l'été. Si tu l'atteins, fais une simulation sur caf.fr : beaucoup d'étudiants y ont droit sans le savoir.
 
