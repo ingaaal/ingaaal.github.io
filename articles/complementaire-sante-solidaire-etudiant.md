@@ -3,6 +3,7 @@ title: Complémentaire santé solidaire étudiant : une mutuelle gratuite ou à 
 description: La Complémentaire santé solidaire remplace ta mutuelle pour 0 € ou 8 € par mois. Plafonds 2026, cas où tu peux la demander sans tes parents, démarche ameli.
 date: 2026-11-12
 category: Aides
+situations: galere, rentree
 ---
 
 Si tes ressources ne dépassent pas **10 421 € sur 12 mois** (868 € par mois en moyenne), la Complémentaire santé solidaire (C2S) te sert de mutuelle **gratuitement**. Entre 10 421 € et **14 069 €**, elle te coûte **8 € par mois** si tu as 29 ans ou moins.

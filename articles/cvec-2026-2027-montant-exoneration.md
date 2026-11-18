@@ -3,6 +3,7 @@ title: CVEC 2026-2027 : 105 €, qui doit payer, qui est exonéré et comment se
 description: La CVEC coûte 105 € en 2026-2027. Qui doit la payer, qui est exonéré, comment payer par carte ou en espèces et comment te faire rembourser si tu as payé à tort.
 date: 2026-11-06
 category: Démarches
+situations: rentree, bourse
 ---
 
 En 2026-2027, la CVEC (contribution de vie étudiante et de campus) coûte **105 €**, à payer une fois par an, avant ton inscription administrative. Si tu es boursier, tu ne paies rien, mais tu dois quand même récupérer une attestation. Et si tu as payé alors que tu n'aurais pas dû, tu as **jusqu'au 31 mai 2027** pour te faire rembourser : passé cette date, les 105 € sont perdus.

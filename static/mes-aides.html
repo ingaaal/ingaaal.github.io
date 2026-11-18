@@ -1,0 +1,64 @@
+<span class="cat">Simulateur</span>
+<h1>Quelles aides pour toi ? Le test en 1 minute</h1>
+<p class="meta">8 questions · Aucune donnée envoyée : tout se calcule sur ton appareil<span class="verif">Montants vérifiés en novembre 2026</span></p>
+<p class="outil-intro">Beaucoup d'étudiants passent à côté d'aides auxquelles ils ont droit, simplement parce qu'ils ne savent pas qu'elles existent. Réponds aux questions : la liste des aides à demander se met à jour au fur et à mesure.</p>
+
+<form class="quiz" id="quiz" autocomplete="off" onsubmit="return false">
+<fieldset><legend><b>1</b> Quel âge as-tu ?</legend>
+<label class="champ"><input type="number" name="age" inputmode="numeric" min="15" max="70" placeholder="20"> ans</label></fieldset>
+
+<fieldset><legend><b>2</b> Cette année, tu es…</legend>
+<div class="choix">
+<label><input type="radio" name="statut" value="etudiant"><span>Étudiant</span></label>
+<label><input type="radio" name="statut" value="apprenti"><span>Alternant en apprentissage</span></label>
+<label><input type="radio" name="statut" value="pro"><span>Alternant en contrat pro</span></label>
+</div></fieldset>
+
+<fieldset><legend><b>3</b> Tu as une bourse du Crous ?</legend>
+<div class="choix">
+<label><input type="radio" name="bourse" value="oui"><span>Oui, je suis boursier</span></label>
+<label><input type="radio" name="bourse" value="non"><span>Non, ma demande a été refusée</span></label>
+<label><input type="radio" name="bourse" value="jamais"><span>Je n'ai jamais fait de demande</span></label>
+</div>
+<div class="sous" data-si="bourse=oui"><p>Tu as eu la mention très bien au bac, et tu n'as pas redoublé depuis ?</p>
+<div class="choix">
+<label><input type="radio" name="mention" value="oui"><span>Oui</span></label>
+<label><input type="radio" name="mention" value="non"><span>Non</span></label>
+</div></div></fieldset>
+
+<fieldset><legend><b>4</b> Où vis-tu ?</legend>
+<div class="choix">
+<label><input type="radio" name="logement" value="parents"><span>Chez mes parents</span></label>
+<label><input type="radio" name="logement" value="loue"><span>Je loue (studio, coloc, Crous…)</span></label>
+<label><input type="radio" name="logement" value="cherche"><span>Je cherche un logement</span></label>
+</div></fieldset>
+
+<fieldset><legend><b>5</b> Combien gagnes-tu par mois en travaillant ?</legend>
+<p class="aide-champ">Salaire net d'un job ou d'une alternance, en moyenne. Ne compte pas la gratification de stage ni les aides. Mets 0 si tu ne travailles pas.</p>
+<label class="champ"><input type="number" name="revenus" inputmode="numeric" min="0" max="10000" step="10" placeholder="0"> € par mois</label></fieldset>
+
+<fieldset><legend><b>6</b> Tu fais (ou vas faire) un stage de plus de 2 mois ?</legend>
+<div class="choix">
+<label><input type="radio" name="stage" value="oui"><span>Oui</span></label>
+<label><input type="radio" name="stage" value="non"><span>Non</span></label>
+</div></fieldset>
+
+<fieldset><legend><b>7</b> Tu traverses un coup dur en ce moment ?</legend>
+<p class="aide-champ">Loyer impayé, job perdu, grosse dépense imprévue, plus de quoi manger…</p>
+<div class="choix">
+<label><input type="radio" name="galere" value="oui"><span>Oui</span></label>
+<label><input type="radio" name="galere" value="non"><span>Non</span></label>
+</div></fieldset>
+
+<fieldset><legend><b>8</b> Tu veux passer le permis de conduire ?</legend>
+<div class="choix">
+<label><input type="radio" name="permis" value="oui"><span>Oui</span></label>
+<label><input type="radio" name="permis" value="non"><span>Non</span></label>
+</div></fieldset>
+<button type="reset" class="raz">Tout effacer</button>
+</form>
+
+<section class="resultats" id="resultats" aria-live="polite">
+<noscript><p>Ce test a besoin de JavaScript. Tu peux aussi parcourir <a href="{BASE}/categorie/aides/">tous nos articles sur les aides</a>.</p></noscript>
+</section>
+<p class="avert">Ce test donne des pistes, pas une décision : seul l'organisme qui verse l'aide (Crous, Caf, Action Logement…) peut confirmer ton droit et ton montant. Chaque aide renvoie vers un article qui détaille les conditions et cite les sources officielles.</p>

@@ -3,6 +3,7 @@ title: Aide au mérite étudiant : 900 € par an en plus de ta bourse si tu as 
 description: Boursier avec mention très bien au bac ? L'aide au mérite te verse 900 € par an pendant 3 ans max. Conditions, versement, cumul et pièges à éviter.
 date: 2026-11-13
 category: Aides
+situations: bourse, rentree
 ---
 
 Si tu es boursier et que tu as décroché la **mention très bien au bac**, l'État t'ajoute **900 € par an** à ta bourse Crous : c'est l'aide au mérite. Tu peux la toucher jusqu'à trois années, soit 2 700 € au total.

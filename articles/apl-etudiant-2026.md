@@ -3,6 +3,7 @@ title: APL étudiant 2026 : combien tu peux toucher et comment la demander
 description: Montant moyen de l'APL étudiant en 2026, conditions, forfait de ressources retenu par la CAF, démarche pas à pas et erreurs qui font perdre des mois d'aide.
 date: 2026-11-04
 category: Logement
+situations: logement, galere
 ---
 
 Un étudiant qui loue un logement touche en général **entre 100 € et 250 € d'APL par mois** en 2026. Sur une année, ça peut représenter plus de 2 000 € : de quoi couvrir une bonne partie du loyer.

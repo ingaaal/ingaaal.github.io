@@ -9,7 +9,7 @@ date: 2026-11-04
 category: Aides
 ---
 """
-import html, json, re, shutil, sys, unicodedata
+import html, json, re, shutil, sys, unicodedata, urllib.parse
 from datetime import date
 from pathlib import Path
 import markdown
@@ -19,6 +19,14 @@ SORTIE = RACINE / "docs"
 BASE = "https://ingaaal.github.io"
 NOM = "Fin de Mois"
 CATEGORIES = ["Aides", "Logement", "Bons plans", "Banque", "Jobs", "Démarches"]
+# Entrées « Par où commencer ? » de l'accueil : clé (champ situations des articles) -> libellé
+SITUATIONS = {
+    "logement": "Je cherche un logement",
+    "bourse": "Je suis boursier (ou je pourrais l'être)",
+    "travail": "Je bosse : job, alternance ou stage",
+    "rentree": "Je prépare ma rentrée",
+    "galere": "C'est la galère ce mois-ci",
+}
 MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"]
 
 def date_fr(d):
@@ -33,6 +41,9 @@ def lire(p):
     meta["md"] = m.group(2)
     meta["corps"] = liens_sources(markdown.markdown(m.group(2), extensions=["tables"]))
     return meta
+
+def situations(a):
+    return [x.strip() for x in a.get("situations", "").split(",") if x.strip()]
 
 def slugifier(t):
     t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().lower()
@@ -97,7 +108,7 @@ def verifier(arts):
     """Contrôle les articles avant publication. Erreurs = build refusé ; alertes = à corriger si possible."""
     erreurs, alertes = [], []
     slugs = {a["slug"] for a in arts}
-    pages = slugs | {"a-propos"} | {f"categorie/{slugifier(c)}" for c in CATEGORIES}
+    pages = slugs | {"a-propos", "mes-aides"} | {f"categorie/{slugifier(c)}" for c in CATEGORIES}
     titres = {}
     for a in arts:
         n = f"articles/{a['slug']}.md"
@@ -114,6 +125,11 @@ def verifier(arts):
                     erreurs.append(f"{n} : {champ} invalide « {a[champ]} » (format AAAA-MM-JJ)")
         if a.get("category") and a["category"] not in CATEGORIES:
             erreurs.append(f"{n} : catégorie « {a['category']} » inconnue ({', '.join(CATEGORIES)})")
+        if not situations(a):
+            alertes.append(f"{n} : champ « situations » absent ({', '.join(SITUATIONS)}) : l'article n'apparaîtra dans aucun filtre « Par où commencer ? »")
+        for x in situations(a):
+            if x not in SITUATIONS:
+                erreurs.append(f"{n} : situation « {x} » inconnue ({', '.join(SITUATIONS)})")
         lg = len(a.get("description", ""))
         if not 140 <= lg <= 160:
             erreurs.append(f"{n} : description de {lg} caractères (il en faut 140 à 160)")
@@ -185,7 +201,10 @@ def image_partage(a, dossier):
     shutil.copy(cache, dossier / "partage.png")
     return f"{BASE}/{a['slug']}/partage.png"
 
-def page(titre, desc, url, contenu, schemas=(), image=None, type_og="website"):
+THEME = "<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>"
+SOLEIL = '<svg viewBox="0 0 24 24" aria-hidden="true" class="i-clair"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="i-sombre"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>'
+
+def page(titre, desc, url, contenu, schemas=(), image=None, type_og="website", scripts=()):
     sch = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in schemas)
     og_img = (f'<meta property="og:image" content="{image}">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta name="twitter:card" content="summary_large_image">') if image else '<meta name="twitter:card" content="summary">'
     return f"""<!DOCTYPE html>
@@ -193,6 +212,8 @@ def page(titre, desc, url, contenu, schemas=(), image=None, type_og="website"):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+{THEME}
 <title>{html.escape(titre)}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{url}">
@@ -208,12 +229,14 @@ def page(titre, desc, url, contenu, schemas=(), image=None, type_og="website"):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Literata:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{BASE}/style.css">
+<script src="{BASE}/site.js" defer></script>
+{"".join(f'<script src="{BASE}/{x}" defer></script>' for x in scripts)}
 {sch}
 </head>
 <body>
 <header class="tete"><div class="w">
 <a class="logo" href="{BASE}/" aria-label="Fin de Mois, accueil"><svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true"><g transform="rotate(-6 24 24)"><rect x="7" y="9" width="34" height="33" rx="4" fill="#fff" stroke="currentColor" stroke-width="2.6"/><path d="M7 13a4 4 0 0 1 4-4h26a4 4 0 0 1 4 4v5H7z" fill="currentColor"/><rect x="15" y="5" width="3.2" height="8" rx="1.6" fill="currentColor"/><rect x="29.8" y="5" width="3.2" height="8" rx="1.6" fill="currentColor"/><text x="24" y="36.5" text-anchor="middle" font-family="Bricolage Grotesque,system-ui,sans-serif" font-weight="800" font-size="16" fill="currentColor" letter-spacing="-.5">31</text></g><path class="logo-cercle" d="M12.5 29.5c1-6.8 9.6-9.6 16.6-8.4 7.3 1.3 10.4 6.6 8.6 11.4-1.9 5-9.7 7.4-16.4 6.3C14.6 37.7 11.2 33.9 12.8 28.6c.9-3 3.4-4.9 6-6" fill="none" stroke="#d1243b" stroke-width="2.2" stroke-linecap="round"/></svg><span class="logo-nom">Fin de <span class="logo-mois">Mois</span></span></a>
-<nav><a href="{BASE}/#articles">Articles</a><a href="{BASE}/a-propos/">À propos</a></nav>
+<nav><a class="nav-outil" href="{BASE}/mes-aides/">Mes aides</a><a href="{BASE}/#articles">Articles</a><a class="nav-propos" href="{BASE}/a-propos/">À propos</a><button type="button" class="theme" aria-label="Passer en mode sombre" title="Mode clair / sombre" hidden>{SOLEIL}</button></nav>
 </div></header>
 {contenu}
 <footer><div class="w"><span>Fin de Mois, le budget étudiant expliqué simplement.</span><span>Infos vérifiées sur les sources officielles · <a href="{BASE}/a-propos/">Comment on vérifie</a></span></div></footer>
@@ -230,9 +253,18 @@ def schema_fil(*etapes):
             "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": n, "item": u} for i, (n, u) in enumerate(etapes)]}
 
 def carte(a, une=False):
-    return f"""<a class="art{' art-une' if une else ''}" href="{BASE}/{a['slug']}/" data-cat="{slugifier(a['category'])}">
+    return f"""<a class="art{' art-une' if une else ''}" href="{BASE}/{a['slug']}/" data-cat="{slugifier(a['category'])}" data-sit="{' '.join(situations(a))}">
 <span class="art-haut"><span class="cat">{html.escape(a['category'])}</span><time datetime="{a['date']}">{date_fr(a['date'])}</time></span>
 <h3>{html.escape(a['title'])}</h3><p>{html.escape(a['description'])}</p><span class="lire">{'Lire l’article' if une else 'Lire'} →</span></a>"""
+
+def partage(titre, url, haut=False):
+    """Boutons de partage : WhatsApp, copier le lien, partage natif du téléphone (via site.js)."""
+    texte = urllib.parse.quote(f"{titre} {url}")
+    intro = "" if haut else '<p>Ça peut aider un pote ? Envoie-lui.</p>'
+    return f"""<div class="partage{' partage-haut' if haut else ''}" data-titre="{html.escape(titre)}" data-url="{url}">{intro}<div class="partage-btns">
+<button type="button" class="p-natif" hidden>Partager</button>
+<a class="p-wa" href="https://wa.me/?text={texte}" target="_blank" rel="noopener">WhatsApp</a>
+<button type="button" class="p-copier" hidden>Copier le lien</button></div></div>"""
 
 def lire_tous():
     arts, erreurs = [], []
@@ -260,7 +292,8 @@ def construire():
         shutil.rmtree(SORTIE)
     SORTIE.mkdir()
     shutil.copy(RACINE / "static" / "style.css", SORTIE / "style.css")
-    shutil.copy(RACINE / "static" / "favicon.svg", SORTIE / "favicon.svg")
+    for f in ("favicon.svg", "site.js", "aides.js"):
+        shutil.copy(RACINE / "static" / f, SORTIE / f)
     (SORTIE / ".nojekyll").write_text("")
 
     arts.sort(key=lambda a: (a["date"], a["slug"]), reverse=True)
@@ -281,7 +314,9 @@ def construire():
 <a class="cat" href="{url_cat(a['category'])}">{html.escape(a['category'])}</a>
 <h1>{html.escape(a['title'])}</h1>
 <p class="meta">Publié le {date_fr(a['date'])} · {minutes(a['md'])} min de lecture<span class="verif">Infos vérifiées le {date_fr(verifie)}</span></p>
+{partage(a['title'], url, True)}
 <div class="corps">{habiller(a['corps'])}</div>
+{partage(a['title'], url)}
 <p class="avert">Les montants et les règles peuvent changer : en cas de doute, la source officielle fait foi. <a href="{BASE}/a-propos/#erreur">Signaler une erreur</a></p>
 {aussi}
 <p class="retour"><a href="{BASE}/">← Tous les articles</a></p>
@@ -298,6 +333,9 @@ def construire():
                             "mainEntity": [{"@type": "Question", "name": x, "acceptedAnswer": {"@type": "Answer", "text": r}} for x, r in q]})
         (d / "index.html").write_text(page(f"{a['title']} | {NOM}", a["description"], url, contenu, schemas, image, "article"), encoding="utf-8")
 
+    filtres = (f'<nav class="cats cats-filtres" aria-label="Filtrer par catégorie"><a href="{BASE}/#articles" data-filtre="tout" aria-pressed="true">Tout <small>{len(arts)}</small></a>'
+               + "".join(f'<a href="{url_cat(c)}" data-cat="{slugifier(c)}" data-filtre="cat:{slugifier(c)}" aria-pressed="false">{html.escape(c)} <small>{sum(a["category"] == c for a in arts)}</small></a>' for c in cats) + "</nav>")
+    sits = "".join(f'<a class="sit" href="{BASE}/#articles" data-filtre="sit:{k}" data-sitk="{k}"><span>{html.escape(v)}</span><small>{sum(k in situations(a) for a in arts)} articles</small></a>' for k, v in SITUATIONS.items() if any(k in situations(a) for a in arts))
     puces = '<nav class="cats" aria-label="Catégories">' + "".join(f'<a href="{url_cat(c)}" data-cat="{slugifier(c)}">{html.escape(c)} <small>{sum(a["category"] == c for a in arts)}</small></a>' for c in cats) + "</nav>"
 
     for c in cats:
@@ -326,8 +364,13 @@ def construire():
 <div><span>Bourse échelon 2</span><span>− 307,10 €</span></div>
 <div class="tot"><span>Il te reste</span><span>17,10 €</span></div></div>
 </section>
-<section class="liste" id="articles"><h2>À la une</h2>{carte(arts[0], True) if arts else ""}
-<div class="liste-tete"><h2>Tous les articles</h2>{puces}</div><div class="grille">{"".join(carte(a) for a in arts[1:])}</div></section>
+<section class="depart" aria-labelledby="depart-titre"><h2 id="depart-titre">Par où commencer ?</h2>
+<div class="sit-grille"><a class="sit sit-outil" href="{BASE}/mes-aides/"><span>Trouve tes aides en 1 minute</span><small>8 questions, aucune donnée envoyée →</small></a>{sits}</div></section>
+<section class="liste" id="articles"><div class="une-bloc"><h2>À la une</h2>{carte(arts[0], True) if arts else ""}</div>
+<div class="liste-tete"><h2 id="liste-titre">Tous les articles</h2>{filtres}</div>
+<p class="filtre-info" role="status" aria-live="polite"></p>
+<div class="grille" id="grille">{"".join(carte(a).replace('<a class="art"', '<a class="art" data-une', 1) if i == 0 else carte(a) for i, a in enumerate(arts))}</div>
+<p class="plus-wrap"><button type="button" class="plus" hidden></button></p></section>
 </main>"""
     site = {"@context": "https://schema.org", "@type": "WebSite", "name": NOM, "url": f"{BASE}/", "inLanguage": "fr"}
     (SORTIE / "index.html").write_text(page(f"{NOM} : le budget étudiant expliqué simplement", "Aides étudiantes, bourses, APL, bons plans : les montants à jour et les démarches expliquées simplement.", f"{BASE}/", accueil, [site]), encoding="utf-8")
@@ -343,13 +386,21 @@ def construire():
     (SORTIE / "a-propos").mkdir()
     (SORTIE / "a-propos" / "index.html").write_text(page(f"À propos | {NOM}", "Qui écrit Fin de Mois, comment les articles sont vérifiés et comment signaler une erreur.", f"{BASE}/a-propos/", apropos), encoding="utf-8")
 
+    outil = (RACINE / "static" / "mes-aides.html").read_text(encoding="utf-8").replace("{BASE}", BASE)
+    urlo = f"{BASE}/mes-aides/"
+    contenu = f"""<main class="article outil">{fil(accueil_fil, ("Mes aides", urlo))}{outil}{partage("Trouve tes aides étudiantes en 1 minute", urlo)}</main>"""
+    (SORTIE / "mes-aides").mkdir()
+    (SORTIE / "mes-aides" / "index.html").write_text(page(f"Quelles aides étudiantes pour toi ? Le test en 1 minute | {NOM}",
+        "Bourse, APL, prime d'activité, Mobili-Jeune, aide au mérite… Réponds à 8 questions et vois les aides étudiantes auxquelles tu as peut-être droit en 2026.",
+        urlo, contenu, [schema_fil(accueil_fil, ("Mes aides", urlo))], scripts=("aides.js",)), encoding="utf-8")
+
     page404 = f"""<main class="article"><h1>Page introuvable</h1><div class="corps">
 <p>Cette page n'existe pas ou a changé d'adresse.</p>
 <p><a href="{BASE}/">Retour à l'accueil</a> ou choisis une catégorie :</p></div>{puces}</main>"""
     (SORTIE / "404.html").write_text(page(f"Page introuvable | {NOM}", "Cette page n'existe pas ou a changé d'adresse.", f"{BASE}/", page404).replace("<head>", '<head>\n<meta name="robots" content="noindex">', 1), encoding="utf-8")
 
     plus_recent = max(a.get("updated", a["date"]) for a in arts) if arts else date.today().isoformat()
-    lastmod = {f"{BASE}/": plus_recent, f"{BASE}/a-propos/": plus_recent}
+    lastmod = {f"{BASE}/": plus_recent, f"{BASE}/mes-aides/": plus_recent, f"{BASE}/a-propos/": plus_recent}
     lastmod.update({f"{BASE}/{a['slug']}/": a.get("updated", a["date"]) for a in arts})
     lastmod.update({url_cat(c): max(a.get("updated", a["date"]) for a in arts if a["category"] == c) for c in cats})
     sm = "".join(f"<url><loc>{u}</loc><lastmod>{m}</lastmod></url>" for u, m in lastmod.items())

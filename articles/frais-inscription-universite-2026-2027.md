@@ -3,6 +3,7 @@ title: Frais d'inscription à l'université 2026-2027 : combien tu paies en lice
 description: Frais d'inscription université 2026-2027 : 178 € en licence, 255 € en master, 398 € en doctorat, exonération des boursiers, double cursus, paiement en 3 fois.
 date: 2026-11-17
 category: Démarches
+situations: rentree, bourse
 ---
 
 En 2026-2027, une inscription dans une université publique coûte **178 € en licence, 255 € en master et 398 € en doctorat**. À ça s'ajoute la CVEC de 105 €, sauf si tu es boursier : dans ce cas, tu ne paies ni l'un ni l'autre.

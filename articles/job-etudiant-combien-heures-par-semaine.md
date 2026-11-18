@@ -3,6 +3,7 @@ title: Job étudiant : combien d'heures par semaine tu peux travailler (et ce qu
 description: Combien d'heures un étudiant peut-il travailler par semaine ? Limites légales, règle des 964 h, salaire au Smic, impôts et prime d'activité.
 date: 2026-11-04
 category: Jobs
+situations: travail
 ---
 
 Si tu es étudiant français, **aucune loi ne limite tes heures de job à un nombre fixe par semaine** : tu suis les mêmes règles que n'importe quel salarié, soit **48 heures maximum sur une semaine et 10 heures par jour**. Les étudiants étrangers non européens, eux, sont plafonnés à **964 heures par an**, soit environ 18 heures par semaine en moyenne.

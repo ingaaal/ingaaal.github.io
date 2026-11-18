@@ -3,6 +3,7 @@ title: Repas Crous à 1 € : tous les étudiants y ont droit, voici comment en 
 description: Depuis le 4 mai 2026, le repas Crous est à 1 € pour tous les étudiants, boursiers ou non. Ce qu'il contient, comment payer et combien tu économises.
 date: 2026-11-04
 category: Bons plans
+situations: galere, rentree
 ---
 
 Depuis le **4 mai 2026**, un repas complet au restaurant universitaire coûte **1 € pour tous les étudiants**, boursiers ou non. Avant, ce prix était réservé aux boursiers et aux étudiants en difficulté ; tous les autres payaient 3,30 €.

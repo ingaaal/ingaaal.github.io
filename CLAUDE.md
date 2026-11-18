@@ -16,8 +16,10 @@ Public : étudiants de 17 à 25 ans. On tutoie le lecteur.
    description: une phrase de 140 à 160 caractères
    date: AAAA-MM-JJ
    category: Aides | Logement | Bons plans | Banque | Jobs | Démarches
+   situations: une ou plusieurs clés parmi logement, bourse, travail, rentree, galere (séparées par des virgules)
    ---
    ```
+   Le champ `situations` range l'article dans les filtres « Par où commencer ? » de l'accueil.
 5. Style et structure (obligatoires) — 700 à 1 200 mots :
    - **Accroche** : la réponse dès le premier paragraphe avec le chiffre clé en **gras**, puis une phrase qui donne envie de lire la suite (un enjeu concret, un piège à éviter, ce que ça représente sur l'année).
    - Sections `##` courtes, listes, un tableau dès qu'il y a des montants.
@@ -41,6 +43,10 @@ Public : étudiants de 17 à 25 ans. On tutoie le lecteur.
 Si un article existant contient un montant ou une règle qui a changé, le corriger et ajouter `updated: AAAA-MM-JJ` dans son en-tête plutôt que d'écrire un nouvel article.
 
 La date affichée « Infos vérifiées le » est `updated` si présent, sinon `date`. Ne modifier `updated` qu'après avoir revérifié l'article sur les sources officielles.
+
+## Simulateur « Mes aides »
+
+La page /mes-aides/ (fichiers `static/mes-aides.html` et `static/aides.js`) reprend des montants et conditions des articles (bourse, APL, prime d'activité, C2S, Mobili-Jeune, aide au mérite, aide d'urgence, gratification, permis, repas Crous). Quand tu corriges un de ces montants ou une de ces règles dans un article, corrige-le aussi dans `static/aides.js` et mets à jour la mention « Montants vérifiés en … » de `static/mes-aides.html`.
 
 ## Interdits
 

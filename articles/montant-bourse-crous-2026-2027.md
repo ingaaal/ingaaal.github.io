@@ -3,6 +3,7 @@ title: Bourse Crous 2026-2027 : le montant exact pour chaque échelon
 description: Combien rapporte la bourse Crous en 2026-2027 ? Montants annuels et mensuels de l'échelon 0 bis à 7, ce qui décide de ton échelon et les erreurs à éviter.
 date: 2026-11-04
 category: Aides
+situations: bourse, rentree
 ---
 
 Selon ton échelon, la bourse Crous te verse **entre 145 € et 633 € par mois** en 2026-2027, soit de 1 454 € à 6 335 € sur l'année. Pour beaucoup d'étudiants, c'est la plus grosse aide de l'année. Et elle ne se demande pas toute seule : sans dossier, pas de bourse, même si tu y as droit.

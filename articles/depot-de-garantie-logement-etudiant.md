@@ -3,6 +3,7 @@ title: Dépôt de garantie étudiant : combien tu paies et quand tu le récupèr
 description: Dépôt de garantie d'un logement étudiant : montant maximum en vide ou meublé, délai de restitution, retenues autorisées et pénalité si le propriétaire tarde.
 date: 2026-11-11
 category: Logement
+situations: logement
 ---
 
 Pour un logement étudiant, le dépôt de garantie est plafonné à **1 mois de loyer hors charges en location vide** et à **2 mois de loyer hors charges en meublé**. Le propriétaire doit te le rendre dans **1 mois** si l'état des lieux de sortie est identique à celui d'entrée, et dans **2 mois** sinon.

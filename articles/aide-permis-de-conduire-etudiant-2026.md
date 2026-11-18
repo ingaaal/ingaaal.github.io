@@ -3,6 +3,7 @@ title: Aide au permis de conduire étudiant 2026 : ce qui existe encore (et ce q
 description: Permis à 1 € par jour, CPF, aides locales : les aides au permis encore ouvertes aux étudiants en 2026, et celles supprimées depuis le 21 février 2026.
 date: 2026-11-10
 category: Aides
+situations: travail
 ---
 
 En 2026, la principale aide nationale au permis pour un étudiant est le **permis à 1 € par jour** : un prêt sans intérêt de **600 à 1 200 €** que tu rembourses 30 € par mois. Ce n'est pas un cadeau, c'est un crédit, mais l'État paie les intérêts à ta place.

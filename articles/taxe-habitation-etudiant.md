@@ -3,6 +3,7 @@ title: Taxe d'habitation étudiant : est-ce que tu dois encore la payer en 2026 
 description: Taxe d'habitation et étudiant en 2026 : studio, chambre Crous, alternant avec deux logements. Qui paie encore, dates de l'avis et quoi faire en cas d'erreur.
 date: 2026-11-14
 category: Logement
+situations: logement
 ---
 
 Si ton studio ou ta chambre est ton logement principal, tu paies **0 € de taxe d'habitation** : elle est supprimée pour toutes les résidences principales depuis 2023, étudiant ou non. Elle existe encore pour un seul type de logement, les **résidences secondaires**.

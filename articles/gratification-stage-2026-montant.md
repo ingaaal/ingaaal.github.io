@@ -3,6 +3,7 @@ title: Gratification de stage 2026 : combien tu dois toucher (et à partir de qu
 description: Gratification de stage 2026 : 4,50 € minimum par heure dès que ton stage dépasse 2 mois. Calcul, montant par mois, impôts, cotisations et pièges à éviter.
 date: 2026-11-16
 category: Jobs
+situations: travail
 ---
 
 En 2026, si ton stage dure **plus de 2 mois**, ton entreprise doit te verser au minimum **4,50 € par heure de stage**. À temps plein, ça fait environ **630 à 690 € par mois** selon le nombre de jours travaillés.
