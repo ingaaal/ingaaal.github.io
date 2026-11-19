@@ -55,7 +55,7 @@ Sur trois ans sans redoubler, l'aide au mérite seule t'apporte 2 700 €. Et co
 
 L'aide au mérite s'ajoute à ta bourse, et elle se cumule aussi avec :
 
-- l'**aide à la mobilité internationale** (jusqu'à 4 000 €) si tu pars étudier à l'étranger ;
+- l'[aide à la mobilité internationale](/aide-mobilite-internationale-etudiant/) (jusqu'à 4 000 €) si tu pars étudier à l'étranger ;
 - l'**aide à la mobilité Parcoursup** (500 €) si tu as été admis hors de ton académie et que tu étais boursier au lycée ;
 - l'**aide à la mobilité pour le master 1** (1 000 €) si tu changes de région après ta licence ;
 - l'[aide d'urgence du Crous](/aide-urgence-crous-etudiant/) si tu traverses un coup dur ;
