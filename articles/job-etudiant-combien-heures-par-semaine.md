@@ -51,7 +51,7 @@ Et 12 heures, c'est jouable : par exemple deux soirs de 3 heures en semaine et 6
 
 Si tu as **25 ans au plus au 1er janvier** de l'année d'imposition, tes salaires de job étudiant peuvent être exonérés d'impôt, dans la limite de **3 fois le Smic mensuel** sur l'année. Pour les revenus 2025, ce plafond était de **5 405 €**.
 
-- L'exonération n'est pas automatique : tu dois choisir cette option sur la déclaration (la tienne ou celle de tes parents si tu es rattaché).
+- L'exonération n'est pas automatique : tu dois choisir cette option sur la déclaration (la tienne ou celle de tes parents si tu es rattaché). Pour savoir s'il vaut mieux rester rattaché ou déclarer seul, lis notre article sur le [rattachement au foyer fiscal des parents](/rattachement-foyer-fiscal-etudiant/).
 - Au-delà du plafond, seule la partie qui dépasse est à déclarer.
 - Les gratifications de stage ont leur propre exonération, jusqu'au montant annuel du Smic (21 622 € pour 2025), et les deux se cumulent. Pour savoir combien ton stage doit te rapporter, lis notre article sur la [gratification de stage en 2026](/gratification-stage-2026-montant/).
 
