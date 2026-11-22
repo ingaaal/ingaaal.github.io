@@ -39,6 +39,8 @@ Sur ta fiche de paie, le net représente environ 79 % du brut au niveau du Smic.
 
 Ce sont des estimations au Smic : ton salaire réel dépend de ton contrat, des heures du dimanche ou de nuit et de ta convention collective.
 
+Autre piste si tu veux un revenu régulier sans contrat de travail : le [service civique](/service-civique-etudiant-indemnite/), indemnisé au moins 619,83 € par mois pour 24 heures par semaine et cumulable avec ta bourse.
+
 ## Exemple concret
 
 Tu travailles **12 heures par semaine** dans un supermarché, payé au Smic, de septembre à juin. Ça te fait environ **507 € net par mois**, donc un peu plus de 5 000 € sur 10 mois.
