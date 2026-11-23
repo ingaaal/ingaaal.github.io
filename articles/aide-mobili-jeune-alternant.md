@@ -94,6 +94,8 @@ Pour le montant du Smic, qui sert de référence au plafond de 120 %, jette un �
 
 Tu loues deux logements, un près de l'école et un près de l'entreprise ? Attention, le second peut être soumis à la [taxe d'habitation](/taxe-habitation-etudiant/).
 
+Pour savoir combien tu dois toucher chaque mois selon ton âge et ton année, lis aussi [le salaire apprenti en 2026](/salaire-apprenti-2026/).
+
 Tu comptais sur l'aide de 500 € au permis pour les apprentis ? Elle a été supprimée en 2026 : voici [les aides au permis qui restent](/aide-permis-de-conduire-etudiant-2026/).
 
 ## Questions fréquentes
