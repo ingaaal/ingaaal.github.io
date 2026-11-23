@@ -1,5 +1,6 @@
 ---
 title: Aide à la mobilité internationale : 400 € par mois pour étudier à l'étranger
+seo_title: Aide à la mobilité internationale : 400 € par mois
 description: Boursier et tu pars en échange ou en stage à l'étranger ? L'aide à la mobilité internationale verse 400 € par mois, jusqu'à 4 000 €. Conditions et démarche.
 date: 2026-11-19
 category: Aides

@@ -1,5 +1,6 @@
 ---
 title: Service civique étudiant : 619,83 € par mois (734,78 € si tu es boursier), cumulables avec ta bourse
+seo_title: Service civique étudiant : 619,83 € par mois
 description: Combien touche un étudiant en service civique en 2026 ? Indemnité, majoration boursier ou RSA, cumul avec la bourse, les études et un job, impôts.
 date: 2026-11-22
 category: Jobs

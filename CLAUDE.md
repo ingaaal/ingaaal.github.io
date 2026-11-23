@@ -13,12 +13,14 @@ Public : étudiants de 17 à 25 ans. On tutoie le lecteur.
    ```
    ---
    title: ...
+   seo_title: titre affiché par Google, 60 caractères maximum (mot-clé principal en premier, chiffre clé si possible)
    description: une phrase de 140 à 160 caractères
    date: AAAA-MM-JJ
    category: Aides | Logement | Bons plans | Banque | Jobs | Démarches
    situations: une ou plusieurs clés parmi logement, bourse, travail, rentree, galere (séparées par des virgules)
    ---
    ```
+   `title` est le grand titre de la page (et le titre des partages) ; `seo_title` est la version courte utilisée dans la balise `<title>`, que Google coupe au-delà de 60 caractères. « | Fin de Mois » n'est ajouté que si le tout tient en 60 caractères.
    Le champ `situations` range l'article dans les filtres « Par où commencer ? » de l'accueil.
 5. Style et structure (obligatoires) — 700 à 1 200 mots :
    - **Accroche** : la réponse dès le premier paragraphe avec le chiffre clé en **gras**, puis une phrase qui donne envie de lire la suite (un enjeu concret, un piège à éviter, ce que ça représente sur l'année).

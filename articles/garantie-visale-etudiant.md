@@ -1,5 +1,6 @@
 ---
 title: Garantie Visale étudiant : un garant gratuit pour louer sans tes parents
+seo_title: Garantie Visale étudiant : un garant gratuit
 description: Visale se porte garant gratuitement pour tous les étudiants de 30 ans et moins : ce qui est couvert, la démarche sur visale.fr et les pièges avant de signer.
 date: 2026-11-05
 category: Logement

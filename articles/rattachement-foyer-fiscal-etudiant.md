@@ -1,5 +1,6 @@
 ---
 title: Rattachement au foyer fiscal des parents ou déclaration séparée : quel choix pour un étudiant ?
+seo_title: Rattachement fiscal étudiant : rattaché ou séparé ?
 description: Rattaché ou déclaration à part ? Âge limite, demi-part plafonnée à 1 807 €, pension déductible jusqu'à 6 855 € : comment choisir quand tu es étudiant.
 date: 2026-11-20
 category: Démarches

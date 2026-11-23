@@ -1,5 +1,6 @@
 ---
 title: Prêt étudiant garanti par l'État : jusqu'à 20 000 € sans caution, comment ça marche
+seo_title: Prêt étudiant garanti par l'État : jusqu'à 20 000 €
 description: Le prêt étudiant garanti par l'État permet d'emprunter jusqu'à 20 000 € sans caution ni condition de ressources. Conditions, banques, démarche et pièges.
 date: 2026-11-07
 category: Banque

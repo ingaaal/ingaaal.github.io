@@ -1,5 +1,6 @@
 ---
 title: Complémentaire santé solidaire étudiant : une mutuelle gratuite ou à 8 € par mois
+seo_title: Complémentaire santé solidaire étudiant : gratuite ou 8 €
 description: La Complémentaire santé solidaire remplace ta mutuelle pour 0 € ou 8 € par mois. Plafonds 2026, cas où tu peux la demander sans tes parents, démarche ameli.
 date: 2026-11-12
 category: Aides

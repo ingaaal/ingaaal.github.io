@@ -1,5 +1,6 @@
 ---
 title: Aide Mobili-Jeune : jusqu'à 100 € par mois sur ton loyer si tu es en alternance
+seo_title: Aide Mobili-Jeune : jusqu'à 100 € par mois sur ton loyer
 description: Alternant de moins de 30 ans ? L'aide Mobili-Jeune d'Action Logement paie jusqu'à 100 € de ton loyer par mois. Conditions, calcul, délais et démarche.
 date: 2026-11-08
 category: Logement

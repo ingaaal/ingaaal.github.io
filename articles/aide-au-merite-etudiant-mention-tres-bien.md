@@ -1,5 +1,6 @@
 ---
 title: Aide au mérite étudiant : 900 € par an en plus de ta bourse si tu as eu mention très bien
+seo_title: Aide au mérite : 900 € par an avec mention très bien
 description: Boursier avec mention très bien au bac ? L'aide au mérite te verse 900 € par an pendant 3 ans max. Conditions, versement, cumul et pièges à éviter.
 date: 2026-11-13
 category: Aides

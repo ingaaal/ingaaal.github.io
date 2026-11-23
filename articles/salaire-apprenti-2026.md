@@ -1,5 +1,6 @@
 ---
 title: Salaire apprenti 2026 : de 504,10 € à 1 867,02 € brut par mois selon ton âge et ton année
+seo_title: Salaire apprenti 2026 : la grille selon ton âge
 description: Salaire apprenti 2026 : la grille selon ton âge et ton année de contrat, les montants bruts depuis le Smic de juin, le changement à ton anniversaire, et le net.
 date: 2026-11-23
 category: Jobs

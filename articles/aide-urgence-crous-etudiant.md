@@ -1,5 +1,6 @@
 ---
 title: Aide d'urgence Crous : jusqu'à 3 071 € si tu es en galère, boursier ou non
+seo_title: Aide d'urgence Crous : jusqu'à 3 071 €, boursier ou non
 description: Aide d'urgence du Crous : jusqu'à 3 071 € par aide, ouverte aux boursiers comme aux non-boursiers de moins de 35 ans. Conditions, démarche et erreurs à éviter.
 date: 2026-11-09
 category: Aides

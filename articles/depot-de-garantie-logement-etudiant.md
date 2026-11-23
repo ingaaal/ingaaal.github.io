@@ -1,5 +1,6 @@
 ---
 title: Dépôt de garantie étudiant : combien tu paies et quand tu le récupères
+seo_title: Dépôt de garantie étudiant : montant et restitution
 description: Dépôt de garantie d'un logement étudiant : montant maximum en vide ou meublé, délai de restitution, retenues autorisées et pénalité si le propriétaire tarde.
 date: 2026-11-11
 category: Logement

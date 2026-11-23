@@ -1,5 +1,6 @@
 ---
 title: Job étudiant : combien d'heures par semaine tu peux travailler (et ce que ça rapporte)
+seo_title: Job étudiant : combien d'heures par semaine ?
 description: Combien d'heures un étudiant peut-il travailler par semaine ? Limites légales, règle des 964 h, salaire au Smic, impôts et prime d'activité.
 date: 2026-11-04
 category: Jobs

@@ -1,5 +1,6 @@
 ---
 title: APL étudiant 2026 : combien tu peux toucher et comment la demander
+seo_title: APL étudiant 2026 : montant et demande
 description: Montant moyen de l'APL étudiant en 2026, conditions, forfait de ressources retenu par la CAF, démarche pas à pas et erreurs qui font perdre des mois d'aide.
 date: 2026-11-04
 category: Logement

@@ -1,5 +1,6 @@
 ---
 title: Frais d'inscription à l'université 2026-2027 : combien tu paies en licence et en master
+seo_title: Frais d'inscription fac 2026-2027 : 178 € en licence
 description: Frais d'inscription université 2026-2027 : 178 € en licence, 255 € en master, 398 € en doctorat, exonération des boursiers, double cursus, paiement en 3 fois.
 date: 2026-11-17
 category: Démarches

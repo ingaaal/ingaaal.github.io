@@ -1,5 +1,6 @@
 ---
 title: Frais d'agence pour une location étudiante : combien tu dois payer au maximum en 2026
+seo_title: Frais d'agence étudiant 2026 : les plafonds par m²
 description: Frais d'agence en location : plafonds 2026 de 8,07 à 12,10 € par m² selon la zone, plus 3,03 € pour l'état des lieux. Calcule ce que tu dois vraiment.
 date: 2026-11-21
 category: Logement

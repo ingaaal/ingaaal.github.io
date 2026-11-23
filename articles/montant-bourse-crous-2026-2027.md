@@ -1,5 +1,6 @@
 ---
 title: Bourse Crous 2026-2027 : le montant exact pour chaque échelon
+seo_title: Bourse Crous 2026-2027 : le montant par échelon
 description: Combien rapporte la bourse Crous en 2026-2027 ? Montants annuels et mensuels de l'échelon 0 bis à 7, ce qui décide de ton échelon et les erreurs à éviter.
 date: 2026-11-04
 category: Aides

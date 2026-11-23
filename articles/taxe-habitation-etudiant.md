@@ -1,5 +1,6 @@
 ---
 title: Taxe d'habitation étudiant : est-ce que tu dois encore la payer en 2026 ?
+seo_title: Taxe d'habitation étudiant 2026 : dois-tu la payer ?
 description: Taxe d'habitation et étudiant en 2026 : studio, chambre Crous, alternant avec deux logements. Qui paie encore, dates de l'avis et quoi faire en cas d'erreur.
 date: 2026-11-14
 category: Logement

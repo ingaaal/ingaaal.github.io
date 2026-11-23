@@ -1,5 +1,6 @@
 ---
 title: Prime d'activité étudiant 2026 : à partir de quel salaire tu y as droit
+seo_title: Prime d'activité étudiant 2026 : à partir de quel salaire
 description: Prime d'activité étudiant 2026 : il faut gagner plus de 1 144,21 € par mois. Job, alternance, stage : qui y a droit, comment la demander et les pièges.
 date: 2026-11-18
 category: Aides

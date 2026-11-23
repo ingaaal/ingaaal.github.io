@@ -1,5 +1,6 @@
 ---
 title: Assurance habitation étudiant : est-elle obligatoire et que risques-tu sans ?
+seo_title: Assurance habitation étudiant : obligatoire ou pas ?
 description: Assurance habitation étudiant : obligatoire en location vide, meublée ou bail mobilité. Garanties minimales, attestation, Crous, colocation, sanctions.
 date: 2026-11-15
 category: Logement

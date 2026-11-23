@@ -1,5 +1,6 @@
 ---
 title: CVEC 2026-2027 : 105 €, qui doit payer, qui est exonéré et comment se faire rembourser
+seo_title: CVEC 2026-2027 : 105 €, exonération et remboursement
 description: La CVEC coûte 105 € en 2026-2027. Qui doit la payer, qui est exonéré, comment payer par carte ou en espèces et comment te faire rembourser si tu as payé à tort.
 date: 2026-11-06
 category: Démarches

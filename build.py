@@ -4,6 +4,7 @@
 Chaque article commence par un en-tête :
 ---
 title: Titre
+seo_title: Titre court pour Google (60 caractères maximum)
 description: Résumé en une phrase (affiché sur Google)
 date: 2026-11-04
 category: Aides
@@ -18,6 +19,12 @@ RACINE = Path(__file__).parent
 SORTIE = RACINE / "docs"
 BASE = "https://ingaaal.github.io"
 NOM = "Fin de Mois"
+SEO_MAX = 60  # au-delà, Google coupe le titre dans ses résultats
+
+def titre_seo(a):
+    """Balise <title> : seo_title, suivi du nom du site seulement si le tout tient en 60 caractères."""
+    t = a.get("seo_title", "").strip() or a["title"]
+    return f"{t} | {NOM}" if len(t) + len(NOM) + 3 <= SEO_MAX else t
 CATEGORIES = ["Aides", "Logement", "Bons plans", "Banque", "Jobs", "Démarches"]
 # Entrées « Par où commencer ? » de l'accueil : clé (champ situations des articles) -> libellé
 SITUATIONS = {
@@ -133,6 +140,11 @@ def verifier(arts):
         lg = len(a.get("description", ""))
         if not 140 <= lg <= 160:
             erreurs.append(f"{n} : description de {lg} caractères (il en faut 140 à 160)")
+        seo = a.get("seo_title", "").strip()
+        if not seo:
+            erreurs.append(f"{n} : champ « seo_title » manquant (titre affiché par Google, 60 caractères maximum)")
+        elif len(seo) > SEO_MAX:
+            erreurs.append(f"{n} : seo_title de {len(seo)} caractères ({SEO_MAX} maximum, sinon Google le coupe)")
         if a.get("title") in titres:
             erreurs.append(f"{n} : même titre que articles/{titres[a['title']]}.md")
         titres[a.get("title")] = a["slug"]
@@ -204,7 +216,7 @@ def image_partage(a, dossier):
 THEME = "<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>"
 SOLEIL = '<svg viewBox="0 0 24 24" aria-hidden="true" class="i-clair"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="i-sombre"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>'
 
-def page(titre, desc, url, contenu, schemas=(), image=None, type_og="website", scripts=()):
+def page(titre, desc, url, contenu, schemas=(), image=None, type_og="website", scripts=(), og_titre=None):
     sch = "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in schemas)
     og_img = (f'<meta property="og:image" content="{image}">\n<meta property="og:image:width" content="1200">\n<meta property="og:image:height" content="630">\n<meta name="twitter:card" content="summary_large_image">') if image else '<meta name="twitter:card" content="summary">'
     return f"""<!DOCTYPE html>
@@ -218,7 +230,7 @@ def page(titre, desc, url, contenu, schemas=(), image=None, type_og="website", s
 <meta name="description" content="{html.escape(desc)}">
 <link rel="canonical" href="{url}">
 <meta name="google-site-verification" content="ZIUyGgv791zJBAkmzFOC50TGnV4PW-4g3ofcVsOqbW4" />
-<meta property="og:title" content="{html.escape(titre)}">
+<meta property="og:title" content="{html.escape(og_titre or titre)}">
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:type" content="{type_og}">
 <meta property="og:url" content="{url}">
@@ -335,7 +347,7 @@ def construire():
         if q:
             schemas.append({"@context": "https://schema.org", "@type": "FAQPage",
                             "mainEntity": [{"@type": "Question", "name": x, "acceptedAnswer": {"@type": "Answer", "text": r}} for x, r in q]})
-        (d / "index.html").write_text(page(f"{a['title']} | {NOM}", a["description"], url, contenu, schemas, image, "article"), encoding="utf-8")
+        (d / "index.html").write_text(page(titre_seo(a), a["description"], url, contenu, schemas, image, "article", og_titre=a["title"]), encoding="utf-8")
 
     filtres = (f'<nav class="cats cats-filtres" aria-label="Filtrer par catégorie"><a href="{BASE}/#articles" data-filtre="tout" aria-pressed="true">Tout <small>{len(arts)}</small></a>'
                + "".join(f'<a href="{url_cat(c)}" data-cat="{slugifier(c)}" data-filtre="cat:{slugifier(c)}" aria-pressed="false">{html.escape(c)} <small>{sum(a["category"] == c for a in arts)}</small></a>' for c in cats) + "</nav>")
@@ -395,7 +407,7 @@ def construire():
     urlo = f"{BASE}/mes-aides/"
     contenu = f"""<main class="article outil">{fil(accueil_fil, ("Mes aides", urlo))}{outil}{partage("Quelles aides étudiantes pour toi ? Le test en 1 minute", urlo, "Envoie le test à un pote")}</main>"""
     (SORTIE / "mes-aides").mkdir()
-    (SORTIE / "mes-aides" / "index.html").write_text(page(f"Quelles aides étudiantes pour toi ? Le test en 1 minute | {NOM}",
+    (SORTIE / "mes-aides" / "index.html").write_text(page("Quelles aides étudiantes pour toi ? Le test en 1 minute",
         "Bourse, APL, prime d'activité, Mobili-Jeune, aide au mérite… Réponds à 8 questions et vois les aides étudiantes auxquelles tu as peut-être droit en 2026.",
         urlo, contenu, [schema_fil(accueil_fil, ("Mes aides", urlo))], scripts=("aides.js",)), encoding="utf-8")
 

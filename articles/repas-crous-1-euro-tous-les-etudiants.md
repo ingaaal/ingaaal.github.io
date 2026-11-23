@@ -1,5 +1,6 @@
 ---
 title: Repas Crous à 1 € : tous les étudiants y ont droit, voici comment en profiter
+seo_title: Repas Crous à 1 € : pour tous les étudiants ?
 description: Depuis le 4 mai 2026, le repas Crous est à 1 € pour tous les étudiants, boursiers ou non. Ce qu'il contient, comment payer et combien tu économises.
 date: 2026-11-04
 category: Bons plans
