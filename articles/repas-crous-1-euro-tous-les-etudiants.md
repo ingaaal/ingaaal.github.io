@@ -51,6 +51,8 @@ Quelques astuces pour ne pas perdre ta pause :
 - **Teste les autres points Crous** de ton campus : une cafétéria moins connue est parfois quasi vide.
 - **Regarde si ton Crous propose la commande en ligne.** Certains, comme celui de Lyon, testent un système de retrait sur place pour une partie des formules à 1 €.
 
+Autre bon plan si tu rentres souvent chez tes parents : la [carte Avantage Jeune](/carte-avantage-jeune-sncf-prix/) fait baisser tes billets de train de 30 %.
+
 ## Les erreurs qui te font payer plus cher
 
 - **Ne pas activer Izly** : sans compte actif, tu paies le tarif normal.
