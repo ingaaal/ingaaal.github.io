@@ -55,6 +55,7 @@ Dans ce cas-là, la déclaration séparée est plus intéressante. Avec un taux 
 - **Bourse Crous** : le Crous regarde les revenus du foyer fiscal de tes parents, pas les tiens. Les détails sont dans notre article sur le [montant de la bourse Crous](/montant-bourse-crous-2026-2027/).
 - **APL** : ce sont tes ressources qui comptent pour la CAF. Avant de choisir, fais une simulation d'[APL étudiant](/apl-etudiant-2026/) sur caf.fr dans les deux situations.
 - **Job étudiant** : l'exonération de tes salaires jusqu'à 3 fois le Smic mensuel s'applique aussi bien sur ta déclaration que sur celle de tes parents. Pour le reste des règles, lis notre article [job étudiant : combien d'heures par semaine](/job-etudiant-combien-heures-par-semaine/).
+- **Épargne** : tant que tu es rattaché, tu ne peux pas ouvrir de livret d'épargne populaire. Les conditions sont dans notre article sur le [LEP étudiant](/lep-etudiant/).
 
 ## Les erreurs qui coûtent cher
 
