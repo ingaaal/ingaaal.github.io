@@ -25,7 +25,7 @@ Si tu rentres chez tes parents pendant les vacances ou que tu fais plusieurs all
 
 Contrairement à la carte Avantage Adulte, il n'y a **aucune condition de week-end** : la réduction s'applique même les jours de grands départs.
 
-Quelques bonus en plus : -15 % au Bistro des TGV INOUI, sur le service de bagages de la SNCF et chez certains partenaires (UCPA, formation BAFA).
+Quelques bonus en plus : -15 % au Bistro des TGV INOUI, sur le service de bagages de la SNCF et chez certains partenaires (UCPA, formation BAFA). Et si tu voyages pour un concert ou un festival, la place peut être payée avec ton [pass Culture](/pass-culture-montant-18-ans/).
 
 ## Les prix plafonnés : 49, 69 ou 89 €
 
